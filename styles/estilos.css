@@ -13,7 +13,8 @@
     background-color: #eaeaea; }
   .nav--bar {
     margin-bottom: 10px;
-    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.748337) 25%, rgba(13, 110, 253, 0.504639) 50%, rgba(13, 110, 253, 0.252539) 100%); }
+    background: #0d6efd;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
   /* ESTILOS PRODUCTOS */
   .category__title--beer {
     margin: 10px auto;
@@ -138,7 +139,8 @@
     background-color: #eaeaea; }
   .nav--bar {
     margin-bottom: 10px;
-    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.748337) 25%, rgba(13, 110, 253, 0.504639) 50%, rgba(13, 110, 253, 0.252539) 100%); }
+    background: #0d6efd;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
   /* ESTILOS PRODUCTOS */
   .category__title--beer {
     margin: 10px auto;
@@ -287,9 +289,11 @@
     background-color: #eaeaea; }
   .nav--bar {
     margin-bottom: 10px;
-    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.748337) 25%, rgba(13, 110, 253, 0.504639) 50%, rgba(13, 110, 253, 0.252539) 100%); }
+    background: #0d6efd;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
   .nav--bar:hover {
-    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.748337) 25%, rgba(13, 110, 253, 0.504639) 50%, rgba(13, 110, 253, 0.252539) 100%); }
+    background: #0d6efd;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
   /* ESTILOS LOGOS */
   .logo__container {
     display: flex;
@@ -441,7 +445,7 @@
     letter-spacing: normal;
     color: #f0f5f9; }
   .category__title--beer h1 {
-    color: #A6791F;
+    color: #0021a1;
     font-size: 5.2rem;
     font-weight: 900;
     margin: 15px; }
@@ -454,7 +458,7 @@
     letter-spacing: normal;
     color: #f0f5f9; }
   .category__title--accesories h1 {
-    color: #A6791F;
+    color: #0021a1;
     font-size: 4.5rem;
     font-weight: 900;
     margin: 15px;
@@ -577,7 +581,7 @@
     letter-spacing: normal;
     color: #f0f5f9; }
   .category__title--beer h1 {
-    color: #A6791F;
+    color: #0021a1;
     font-size: 5.2rem;
     font-weight: 900;
     margin: 15px; }
@@ -590,7 +594,7 @@
     letter-spacing: normal;
     color: #f0f5f9; }
   .category__title--accesories h1 {
-    color: #A6791F;
+    color: #0021a1;
     font-size: 5.2rem;
     font-weight: 900;
     margin: 15px;
@@ -732,7 +736,7 @@
     letter-spacing: normal;
     color: #f0f5f9; }
   .category__title--beer h1 {
-    color: #A6791F;
+    color: #0021a1;
     font-size: 6.2rem;
     font-weight: 900;
     margin-bottom: 50px; }
@@ -745,7 +749,7 @@
     letter-spacing: normal;
     color: #f0f5f9; }
   .category__title--accesories h1 {
-    color: #A6791F;
+    color: #0021a1;
     font-size: 5.2rem;
     font-weight: 900;
     margin: 15px;
