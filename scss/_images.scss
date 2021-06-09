@@ -1,0 +1,150 @@
+@media only screen and (max-width: 480px) {
+    
+    /* ESTILOS GENERALES */
+    
+    .logo__small {
+        width: 20%;
+        float: right;
+        margin-top: 10px;
+    }
+
+    .logo__large {
+        width: 95vw;
+        margin: auto;        
+    }  
+
+    /* ESTILOS PRODUCTOS */
+
+    .category__container--item {
+        
+        img {
+            width: 75%;
+            height: auto;
+        }   
+
+    }
+
+    /* ESTILOS PIE DE PÁGINA */
+
+    .logo__redes {
+        
+        img {
+            width: 70px;    
+        }
+    }
+
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    /* ESTILOS LOGOS */
+
+    .logo__small {
+        width: 30%;
+        float: left;
+        margin-top: 10px;
+    }
+    
+    .logo__large {
+        width: 95vw;
+        margin: auto;
+        
+    }
+
+    /* ESTILOS PRODUCTOS */
+
+       
+    .category__container--item {
+        
+        img {
+            width: 75%;
+            height: auto;
+        }
+    }
+
+    /* ESTILOS SERVICIOS DE COMPRA */
+    
+    .services__items {    
+
+        img {
+            width: 20vw;
+        } 
+        
+    }
+
+        
+    /* ESTILOS PIE DE PAGINA */
+    .logo__redes {
+
+        img {
+            width: 70px;    
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 599px) {
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* ESTILOS PRODUCTOS */
+    .category__container--item {
+        
+        img {
+            width: 100%;
+            height: auto;
+        }   
+
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+    /* ESTILOS LOGOS */
+    .logo__small {
+        width: 10%;
+        float: left;
+        margin-top: 10px;
+    }
+
+    .logo__large {
+        width: 30vw;
+        margin-right: 0 auto;
+
+    }
+
+    .category__container--item {
+
+        img {
+            width: 65%;
+            height: auto;
+        }
+
+    }
+
+    /* ESTILOS SERVICIOS DE COMPRA */
+
+    .services__items {
+
+        img {
+            width: 10vw;
+
+        }
+    }
+
+    /*  ESTILOS PIE DE PAGINA */
+    .logo__redes {
+        img {
+            width: 50px;
+            filter: grayscale(1);
+        }
+
+        img:hover {
+            filter: opacity(0.8);
+        }
+    }
+}

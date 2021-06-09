@@ -1,0 +1,68 @@
+@media only screen and (max-width: 480px) {
+
+    /* ESTILOS PRODUCTOS */
+
+    .category__button {
+        background-color: #0d6efd;
+        color: #fafafa;
+        width: 80%;
+        border-radius: 50px;
+        text-transform: uppercase;
+        text-align: center;        
+    }
+
+    .category__button:active {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    /*ESTILOS PRODUCTOS */
+
+    .category__button {
+        background-color: #0d6efd;
+        color: #fafafa;
+        padding: 5px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        text-align: center;
+        font-size: 1.3rem;
+    }   
+    
+    .category__button:active {
+        transform: scale(0.9);
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 599px) {
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+    /* ESTILOS PRODUCTOS */
+
+    .category__button {
+        background-color: #0d6efd;
+        color: #fafafa;
+        padding: 5px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1rem;        
+    }
+
+    .category__button:active {
+        transform: scale(0.9);
+    }
+    
+}

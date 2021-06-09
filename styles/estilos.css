@@ -1,0 +1,1019 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* 
+#0D6EFD AZUL PRINCIPAL 
+#7DB1FF CELESTE
+#5E9AF2 TURQUESA
+#A6791F MARRÓN OSCURO
+#F2C15E MARRÓN CLARO
+*/
+@media only screen and (max-width: 480px) {
+  /* ESTILOS GENERALES */
+  body, .body--background {
+    background-color: #eaeaea; }
+  .nav--bar {
+    margin-bottom: 10px;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.748337) 25%, rgba(13, 110, 253, 0.504639) 50%, rgba(13, 110, 253, 0.252539) 100%); }
+  /* ESTILOS PRODUCTOS */
+  .category__title--beer {
+    margin: 10px auto;
+    height: 75vh;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../img/fondo-cerveza1.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse; }
+  .category__title--accesories {
+    margin: 10px auto;
+    height: 75vh;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../img/choperas.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse; }
+  .category__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0; }
+  .category__container--item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    width: 48.5%;
+    margin: 5px auto;
+    padding: 10px 0;
+    background-color: #fff; }
+  /* ESTILOS SERVICIOS DE COMPRA */
+  .services {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 20px 0; }
+  .services__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; }
+  /* ESTILOS SUCRIPCION NEWSLETTER */
+  .suscription {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #0d6efd; }
+    .suscription fieldset div {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      align-items: center;
+      width: auto; }
+  .suscription__items {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    width: max-content; }
+  .suscription__items--input1 {
+    float: left;
+    background-color: white;
+    opacity: 100;
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    font-size: auto;
+    text-transform: uppercase; }
+  .suscription__items--input2 {
+    background-color: #001155;
+    border: none;
+    width: 35%;
+    height: 35px;
+    margin-left: 65%;
+    margin-top: 5px;
+    float: right;
+    color: #fff; }
+  /* ESTILOS PIE DE PÁGINA */
+  .logo__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 33.33333px; }
+  footer nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: auto 20px; }
+  /* ESTILOS CONTACTO */
+  .contacto {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px #4c555a8c solid;
+    padding: 20px; }
+  .copyright {
+    display: grid;
+    grid-template-rows: 1fr 1fr; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* ESTILOS GENERALES */
+  body, .body--background {
+    background-color: #eaeaea; }
+  .nav--bar {
+    margin-bottom: 10px;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.748337) 25%, rgba(13, 110, 253, 0.504639) 50%, rgba(13, 110, 253, 0.252539) 100%); }
+  /* ESTILOS PRODUCTOS */
+  .category__title--beer {
+    margin: 10px auto;
+    height: 50vh;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../img/fondo-cerveza1.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse; }
+  .category__title--accesories {
+    margin: 10px auto;
+    height: 50vh;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../img/choperas.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse; }
+  .category__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto; }
+  .category__container--item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+    margin: 5px;
+    padding: 10px 0;
+    background-color: #fff; }
+  /* ESTILOS SERVICIOS DE COMPRA */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; }
+  .services__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 10vw;
+    margin: 20px auto; }
+  /* ESTILOS SUSCRIPCIÓN NEWSLETTER */
+  .suscription {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20vh;
+    background-color: #0d6efd; }
+    .suscription fieldset div {
+      display: flex;
+      flex-direction: row;
+      border: none;
+      align-items: center;
+      width: max-content; }
+  .suscription__items {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: max-content; }
+  .suscription__items--input1 {
+    background-color: white;
+    opacity: 100;
+    width: 40vw;
+    height: 45px;
+    margin: 0 16.66667px;
+    border: none;
+    border-radius: 10px;
+    font-size: auto;
+    text-transform: uppercase; }
+  .suscription__items--input2 {
+    background-color: #001155;
+    border: none;
+    width: 10vw;
+    height: 35px;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: right;
+    color: #fff; }
+  /* ESTILOS PIE DE PAGINA */
+  .logo__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 33.33333px; }
+  footer {
+    background-color: #0d6efd;
+    padding-top: 10px; }
+    footer nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      margin: 0 auto; }
+  /* ESTILOS CONTACTO */
+  .contacto {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px #4c555a8c solid;
+    padding: 20px; }
+  .copyright {
+    display: inline; } }
+
+@media screen and (min-width: 481px) and (max-width: 599px) {
+  /* ESTILOS PIE DE PAGINA */
+  footer nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* ESTILOS PRODUCTOS */
+  .category__container--item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    background-color: #fff; } }
+
+@media only screen and (min-width: 1025px) {
+  /* ESTILOS GENERALES */
+  body, .body--background {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px -1px 5px 5px #abada4;
+    background-color: #eaeaea; }
+  .nav--bar {
+    margin-bottom: 10px;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.748337) 25%, rgba(13, 110, 253, 0.504639) 50%, rgba(13, 110, 253, 0.252539) 100%); }
+  .nav--bar:hover {
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.748337) 25%, rgba(13, 110, 253, 0.504639) 50%, rgba(13, 110, 253, 0.252539) 100%); }
+  /* ESTILOS LOGOS */
+  .logo__container {
+    display: flex;
+    justify-content: center; }
+  /* ESTILOS PRODUCTOS */
+  .category__title--beer {
+    margin: 10px auto;
+    height: 90vh;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../img/fondo-cerveza1.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse; }
+  .category__title--accesories {
+    margin: 10px auto;
+    height: 90vh;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../img/choperas.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse; }
+  .category__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0; }
+  .category__container--item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    margin: 5px 8.33333px;
+    padding: 10px 0;
+    background-color: #fff; }
+  .category__container--item:hover {
+    border: #6d70729a solid 1.5px;
+    box-shadow: 11px 6px 7px -9px rgba(0, 0, 0, 0.59); }
+  /* ESTILOS SERVICIOS DE COMPRA */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    margin: 0 130px; }
+  .services__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20vw;
+    margin: 20px 0; }
+  /* ESTILOS SUSCRIPCION NEWSLETTER */
+  .suscription {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40vh;
+    background-color: #0d6efd; }
+    .suscription fieldset div {
+      display: flex;
+      flex-direction: row;
+      border: none;
+      align-items: center;
+      width: max-content; }
+  .suscription__items {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: max-content; }
+  .suscription__items--input1 {
+    background-color: white;
+    opacity: 100;
+    width: 60vw;
+    height: 65px;
+    margin: 0 16.66667px;
+    border: none;
+    border-radius: 10px;
+    font-size: auto;
+    text-transform: uppercase; }
+  .suscription__items--input2 {
+    background-color: #001155;
+    border: none;
+    width: 7vw;
+    height: 65px;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: right;
+    color: #fff; }
+  /* ESTILOS CONTACTO */
+  .contacto {
+    width: 50%;
+    margin: 20px auto;
+    border: 1px #4c555a8c solid;
+    padding: 20px; }
+  /*  ESTILOS PIE DE PAGINA */
+  .logo__redes {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 33.33333px; }
+  footer {
+    background-color: #0d6efd;
+    padding-top: 10px; }
+    footer nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      margin: 0 200px; }
+  .copyright {
+    display: inline; } }
+
+@media only screen and (max-width: 480px) {
+  /* ESTILOS GENERALES */
+  body, .body--background {
+    font-family: 'Source Sans Pro', sans-serif; }
+  a {
+    color: white;
+    text-decoration: none; }
+  a:active {
+    color: #fafafa;
+    transform: scale(0.9, 0.9);
+    transition-duration: 0.9ms; }
+  .logo__small--title {
+    display: none; }
+  /* ESTILOS PRODUCTOS */
+  .category__title--beer p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 100px;
+    width: 90%;
+    text-align: center;
+    letter-spacing: normal;
+    color: #f0f5f9; }
+  .category__title--beer h1 {
+    color: #A6791F;
+    font-size: 5.2rem;
+    font-weight: 900;
+    margin: 15px; }
+  .category__title--accesories p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 100px;
+    width: 90%;
+    text-align: center;
+    letter-spacing: normal;
+    color: #f0f5f9; }
+  .category__title--accesories h1 {
+    color: #A6791F;
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin: 15px;
+    text-transform: capitalize; }
+  .category h2 {
+    color: #f2c15e;
+    background-color: #001155;
+    width: 95%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0 0 5px;
+    border-radius: 0 50px 0 50px;
+    font-size: 2.5rem; }
+  .category__container--item h3 {
+    text-transform: uppercase;
+    color: #4242c9;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: auto 0;
+    text-align: center; }
+  .category__container--item h4 {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 400; }
+  /* ESTILOS SERVICIOS DE COMPRA */
+  .services__items h3 {
+    font-size: 2.3em;
+    color: #001155;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  /* ESTILOS SUCRIPCION NEWSLETTER */
+  .suscription h4 {
+    color: #001155;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    width: auto;
+    margin: 0; }
+  .suscription span {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-left: 10px; }
+  /* ESTILOS PIE DE PÁGINA */
+  footer {
+    text-align: center;
+    background-color: #0d6efd;
+    padding-top: 10px; }
+    footer ul {
+      list-style: none;
+      margin: 10px; }
+    footer li {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-style: italic;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 400; }
+  /* ESTILOS MAPA DEL SITIO */
+  .site-map {
+    border: solid 1px black;
+    width: max-content;
+    margin: 15px auto;
+    background-color: white; }
+    .site-map h2 {
+      text-transform: uppercase;
+      color: #001155;
+      font-size: 1.9rem;
+      margin-bottom: 15px;
+      padding: 0 10px; }
+    .site-map ul {
+      list-style: none; }
+      .site-map ul li a {
+        color: #0021a1;
+        font-size: 1.2rem;
+        text-align: left; }
+  /* ESTILOS CONTACTO */
+  .contacto h2 {
+    color: #0021a1;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 10px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* ESTILOS GENERALES */
+  body, .body--background {
+    font-family: 'Source Sans Pro', sans-serif; }
+  a {
+    color: white;
+    text-decoration: none; }
+  a:active {
+    color: #fafafa;
+    transform: scale(0.9, 0.9);
+    transition-duration: 0.9ms;
+    color: #0021a1; }
+  .logo__small--title {
+    display: none; }
+  /* ESTILOS SLIDERS */
+  .carousel-caption h2 {
+    color: #fff;
+    font-size: 1.4rem;
+    padding-top: 50px; }
+  /* ESTILOS PRODUCTOS */
+  .carousel-caption h5 {
+    color: white;
+    font-size: 1.8rem; }
+  .category__title--beer p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 100px;
+    width: 90%;
+    text-align: center;
+    letter-spacing: normal;
+    color: #f0f5f9; }
+  .category__title--beer h1 {
+    color: #A6791F;
+    font-size: 5.2rem;
+    font-weight: 900;
+    margin: 15px; }
+  .category__title--accesories p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 100px;
+    width: 90%;
+    text-align: center;
+    letter-spacing: normal;
+    color: #f0f5f9; }
+  .category__title--accesories h1 {
+    color: #A6791F;
+    font-size: 5.2rem;
+    font-weight: 900;
+    margin: 15px;
+    text-transform: capitalize; }
+  .category h2 {
+    color: #f2c15e;
+    background-color: #001155;
+    width: 95%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0 0 5px;
+    border-radius: 0 50px 0 50px;
+    font-size: 4rem; }
+  .category__container--item h3 {
+    text-transform: uppercase;
+    color: #4242c9;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: auto 0;
+    text-align: center; }
+  .category__container--item h4 {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 400; }
+  /* ESTILOS SERVICIOS DE COMPRA */
+  .services__items h3 {
+    font-size: 1.6em;
+    color: #001155;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  /* ESTILOS SUSCRIPCIÓN NEWSLETTER */
+  .suscription h4 {
+    color: #001155;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    width: auto;
+    margin-left: 5px; }
+  .suscription span {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 5px; }
+  /* ESTILOS PIE DE PAGINA */
+  footer {
+    text-align: center; }
+    footer ul {
+      list-style: none;
+      margin: 0; }
+    footer li {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-style: italic;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 400; }
+  /* ESTILOS MAPA DEL SITIO */
+  .site-map {
+    text-align: center;
+    border: solid 1px black;
+    width: max-content;
+    margin: 15px auto;
+    padding: 0 10%;
+    background-color: white; }
+    .site-map h2 {
+      text-transform: uppercase;
+      color: #001155;
+      margin-bottom: 15px; }
+    .site-map ul {
+      list-style: none; }
+      .site-map ul li a {
+        color: #0021a1;
+        font-size: 1.2rem; }
+  /* ESTILOS CONTACTO */
+  .contacto h2 {
+    color: #0021a1;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 10px; } }
+
+@media screen and (min-width: 481px) and (max-width: 599px) {
+  /* ESTILOS SERVICIOS DE COMPRA */
+  .services__items h3 {
+    font-size: 1.1em;
+    color: #001155;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* ESTILOS PRODUCTOS */
+  .category__container--item h3 {
+    text-transform: uppercase;
+    color: #4242c9;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin: auto 0;
+    text-align: center; } }
+
+@media only screen and (min-width: 1025px) {
+  /* ESTILOS GENERALES */
+  body, .body--background {
+    font-family: 'Source Sans Pro', sans-serif; }
+  a {
+    color: white;
+    text-decoration: none; }
+  a:active {
+    color: #fafafa;
+    transform: scale(0.9, 0.9);
+    transition-duration: 0.9ms;
+    color: #0021a1; }
+  .logo__small--title {
+    display: none; }
+  /* ESTILOS SLIDERS */
+  .carousel-caption h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    padding-top: 50px;
+    text-transform: uppercase; }
+  /* ESTILOS PRODUCTOS */
+  .carousel-caption h5 {
+    color: white;
+    font-size: 1.8rem; }
+  /* ESTILOS PRODUCTOS */
+  .category__title--beer p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 100px;
+    width: 45%;
+    letter-spacing: normal;
+    color: #f0f5f9; }
+  .category__title--beer h1 {
+    color: #A6791F;
+    font-size: 6.2rem;
+    font-weight: 900;
+    margin-bottom: 50px; }
+  .category__title--accesories p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 100px;
+    width: 90%;
+    text-align: center;
+    letter-spacing: normal;
+    color: #f0f5f9; }
+  .category__title--accesories h1 {
+    color: #A6791F;
+    font-size: 5.2rem;
+    font-weight: 900;
+    margin: 15px;
+    text-transform: capitalize; }
+  .category h2 {
+    color: #f2c15e;
+    background-color: #001155;
+    width: 75%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0 0 5px;
+    border-radius: 0 50px 0 50px;
+    font-size: 4rem; }
+  .category__container--item h3 {
+    text-transform: uppercase;
+    color: #4242c9;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: auto 0;
+    text-align: center; }
+  .category__container--item h4 {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem; }
+  .category__container--item h5 {
+    font-size: 1rem; }
+  /* ESTILOS SERVICIOS DE COMPRA */
+  .services__items h3 {
+    font-size: 1.6em;
+    color: #001155;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  /* ESTILOS SUSCRIPCION NEWSLETTER */
+  .suscription h4 {
+    color: #001155;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: 600;
+    width: auto;
+    margin-left: 5px; }
+  .suscription span {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 5px; }
+  /* ESTILOS CONTACTO */
+  .contacto h2 {
+    color: #0021a1;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    text-align: center;
+    font-size: 8rem;
+    margin-bottom: 10px; }
+  /* ESTILOS MAPA DEL SITIO */
+  .site-map {
+    text-align: center;
+    border: solid 1px black;
+    width: max-content;
+    margin: 15px auto;
+    padding: 0 10%;
+    background-color: white; }
+    .site-map h2 {
+      text-transform: uppercase;
+      color: #001155;
+      margin-bottom: 15px; }
+    .site-map ul {
+      list-style: none; }
+      .site-map ul li a {
+        color: #0021a1;
+        font-size: 1.2rem; }
+  /*  ESTILOS PIE DE PAGINA */
+  footer {
+    text-align: center; }
+    footer ul {
+      list-style: none;
+      margin: 0; }
+    footer li {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-style: italic;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 400; } }
+
+@media only screen and (max-width: 480px) {
+  /* ESTILOS GENERALES */
+  .logo__small {
+    width: 20%;
+    float: right;
+    margin-top: 10px; }
+  .logo__large {
+    width: 95vw;
+    margin: auto; }
+  /* ESTILOS PRODUCTOS */
+  .category__container--item img {
+    width: 75%;
+    height: auto; }
+  /* ESTILOS PIE DE PÁGINA */
+  .logo__redes img {
+    width: 70px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* ESTILOS LOGOS */
+  .logo__small {
+    width: 30%;
+    float: left;
+    margin-top: 10px; }
+  .logo__large {
+    width: 95vw;
+    margin: auto; }
+  /* ESTILOS PRODUCTOS */
+  .category__container--item img {
+    width: 75%;
+    height: auto; }
+  /* ESTILOS SERVICIOS DE COMPRA */
+  .services__items img {
+    width: 20vw; }
+  /* ESTILOS PIE DE PAGINA */
+  .logo__redes img {
+    width: 70px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* ESTILOS PRODUCTOS */
+  .category__container--item img {
+    width: 100%;
+    height: auto; } }
+
+@media only screen and (min-width: 1025px) {
+  /* ESTILOS LOGOS */
+  .logo__small {
+    width: 10%;
+    float: left;
+    margin-top: 10px; }
+  .logo__large {
+    width: 30vw;
+    margin-right: 0 auto; }
+  .category__container--item img {
+    width: 65%;
+    height: auto; }
+  /* ESTILOS SERVICIOS DE COMPRA */
+  .services__items img {
+    width: 10vw; }
+  /*  ESTILOS PIE DE PAGINA */
+  .logo__redes img {
+    width: 50px;
+    filter: grayscale(1); }
+  .logo__redes img:hover {
+    filter: opacity(0.8); } }
+
+@media only screen and (max-width: 480px) {
+  /* ESTILOS PRODUCTOS */
+  .category__button {
+    background-color: #0d6efd;
+    color: #fafafa;
+    width: 80%;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-align: center; }
+  .category__button:active {
+    transform: scale(0.9); } }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /*ESTILOS PRODUCTOS */
+  .category__button {
+    background-color: #0d6efd;
+    color: #fafafa;
+    padding: 5px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    text-align: center;
+    font-size: 1.3rem; }
+  .category__button:active {
+    transform: scale(0.9); } }
+
+@media only screen and (min-width: 1025px) {
+  /* ESTILOS PRODUCTOS */
+  .category__button {
+    background-color: #0d6efd;
+    color: #fafafa;
+    padding: 5px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem; }
+  .category__button:active {
+    transform: scale(0.9); } }
+
+.width-1 {
+  width: 10%; }
+
+.width-2 {
+  width: 20%; }
+
+.width-3 {
+  width: 30%; }
+
+.width-4 {
+  width: 40%; }
+
+.width-5 {
+  width: 50%; }
+
+.width-6 {
+  width: 60%; }
+
+.width-7 {
+  width: 70%; }
+
+.width-8 {
+  width: 80%; }
+
+.width-9 {
+  width: 90%; }
+
+.width-10 {
+  width: 100%; }
+
+.opacity-10 {
+  opacity: 0.1; }
+
+.opacity-20 {
+  opacity: 0.2; }
+
+.opacity-30 {
+  opacity: 0.3; }
+
+.opacity-40 {
+  opacity: 0.4; }
+
+.opacity-50 {
+  opacity: 0.5; }
+
+.opacity-60 {
+  opacity: 0.6; }
+
+.opacity-70 {
+  opacity: 0.7; }
+
+.opacity-80 {
+  opacity: 0.8; }
+
+.opacity-90 {
+  opacity: 0.9; }
+
+.opacity-100 {
+  opacity: 1; }
+
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 0.5rem; }
+
+h6 {
+  font-size: 0.25rem; }

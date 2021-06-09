@@ -1,0 +1,593 @@
+@import "variables";
+
+@media only screen and (max-width: 480px) {
+
+    /* ESTILOS GENERALES */
+
+    body, .body--background {
+        
+        background-color: #eaeaea;
+    }
+
+    .nav--bar {
+        margin-bottom: 10px;
+        background: linear-gradient(180deg, rgba(13,110,253,1) 0%, rgba(13,110,253,0.7483368347338936) 25%, rgba(13,110,253,0.5046393557422969) 50%, rgba(13,110,253,0.25253851540616246) 100%);
+    }
+
+    /* ESTILOS PRODUCTOS */
+
+    .category__title--beer {
+        margin: $margin/10 auto;    
+        height: 75vh;
+        width: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly ;
+        align-items: center;
+        background-image: url("../img/fondo-cerveza1.jpg");
+        background-position: bottom;
+        background-size: cover;        
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .category__title--accesories {
+        margin: $margin/10 auto;     
+        height: 75vh;
+        width: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly ;
+        align-items: center;
+        background-image: url("../img/choperas.jpg");
+        background-position: bottom;
+        background-size: cover;        
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+
+    .category__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0;
+    }
+
+    .category__container--item {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 48.5%;
+        margin: $margin/20 auto ;    
+        padding: 10px 0; 
+        background-color: #fff;
+
+    }
+
+    /* ESTILOS SERVICIOS DE COMPRA */
+
+    .services {
+                
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+        margin: $margin/5 0;
+        
+    }
+
+    .services__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: $margin/10;
+
+    }
+
+    /* ESTILOS SUCRIPCION NEWSLETTER */
+
+    .suscription {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;        
+        align-items: center;
+        height: 30vh;
+        background-color: #0d6efd;        
+    
+    fieldset div {
+        display: flex;
+        flex-direction: column;
+        border: none;        
+        align-items: center;
+        width: auto;                      
+    } 
+    
+}
+    
+    .suscription__items {
+        display: flex;
+        flex-direction: column;
+        border: none;        
+        align-items: center;
+        width: max-content;
+    }
+
+    .suscription__items--input1 {
+        float: left;
+        background-color: white;
+        opacity: 100;
+        width: 100%;
+        height: 45px;
+        margin: 0;
+        border: none;
+        border-radius: 10px;
+        font-size: auto;
+        text-transform: uppercase; 
+    }
+
+    .suscription__items--input2 {
+        background-color: #001155;
+        border: none;
+        width: 35%;
+        height: 35px;
+        margin-left: 65%;
+        margin-top: $margin/20;
+        float: right; 
+        color: #fff;        
+    }
+
+
+/* ESTILOS PIE DE PÁGINA */
+
+    .logo__redes {
+        display: flex;
+        flex-direction: row;        
+        justify-content: space-between;
+        margin: $margin/10 $margin/3;
+        
+    }
+
+    footer {      
+                
+        nav {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            margin: auto $margin/5;
+        }
+    }
+
+    /* ESTILOS CONTACTO */
+    .contacto {
+        width: 90%;
+        margin: $margin/5 auto;
+        border: 1px #4c555a8c solid;
+        padding: 20px;
+        
+    }
+
+    .copyright {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    /* ESTILOS GENERALES */
+    body, .body--background {
+        
+        background-color: #eaeaea;
+    }
+
+    .nav--bar {
+        margin-bottom: 10px;
+        background: linear-gradient(180deg, rgba(13,110,253,1) 0%, rgba(13,110,253,0.7483368347338936) 25%, rgba(13,110,253,0.5046393557422969) 50%, rgba(13,110,253,0.25253851540616246) 100%);
+    }
+
+    /* ESTILOS PRODUCTOS */
+
+    .category__title--beer {
+        margin: $margin/10 auto;    
+        height: 50vh;
+        width: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly ;
+        align-items: center;
+        background-image: url("../img/fondo-cerveza1.jpg");
+        background-position: bottom;
+        background-size: cover;        
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .category__title--accesories {
+        margin: $margin/10 auto;    
+        height: 50vh;
+        width: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly ;
+        align-items: center;
+        background-image: url("../img/choperas.jpg");
+        background-position: bottom;
+        background-size: cover;        
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .category__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+       
+    .category__container--item {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 32%;
+        margin: $margin/20;        
+        padding: 10px 0;
+        background-color: #fff;
+    }
+
+    /* ESTILOS SERVICIOS DE COMPRA */
+    .services {                 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        
+        
+    }
+    
+    .services__items {    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;        
+        width: 10vw;
+        margin: $margin/5 auto;
+        
+    }
+    
+    /* ESTILOS SUSCRIPCIÓN NEWSLETTER */
+    
+    .suscription {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;        
+        align-items: center;
+        height: 20vh;
+        background-color: #0d6efd;
+    
+    fieldset div {
+        display: flex;
+        flex-direction: row;
+        border: none;        
+        align-items: center;
+        width: max-content;                      
+    }  
+    
+}
+
+.suscription__items {
+    display: flex;
+    flex-direction: column;
+    border: none;  
+    justify-content: flex-end;      
+    align-items: center;
+    width: max-content;
+}
+
+.suscription__items--input1 {
+    
+    background-color: white;
+    opacity: 100;
+    width: 40vw;
+    height: 45px;
+    margin: 0 $margin/6;
+    border: none;
+    border-radius: 10px;
+    font-size: auto;
+    text-transform: uppercase; 
+}
+
+.suscription__items--input2 {
+    background-color: #001155;
+    border: none;
+    width: 10vw;
+    height: 35px;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: right; 
+    color: #fff;     
+    
+}   
+    /* ESTILOS PIE DE PAGINA */
+    .logo__redes {
+        display: flex;
+        flex-direction: row;        
+        justify-content: space-around;
+        margin: $margin/10 $margin/3;
+       
+    }    
+        
+    footer {      
+     
+        background-color: #0d6efd;
+        padding-top: 10px; 
+        
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            margin: 0 auto;
+        }
+    }
+
+    /* ESTILOS CONTACTO */
+
+    .contacto {
+        width: 90%;
+        margin: $margin/5 auto;
+        border: 1px #4c555a8c solid;
+        padding: 20px;
+        
+    }
+    
+    .copyright {
+        display: inline;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 599px) {
+
+    /* ESTILOS PIE DE PAGINA */
+    
+    footer {      
+        
+        nav {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* ESTILOS PRODUCTOS */
+    .category__container--item {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 24%; 
+        background-color: #fff;
+        
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+    /* ESTILOS GENERALES */
+    body, .body--background {
+        max-width: 1200px;
+        margin: 0 auto;
+        box-shadow: 0px -1px 5px 5px rgba(171,173,164,1);
+        background-color: #eaeaea;
+    }
+
+    .nav--bar {
+        margin-bottom: 10px;
+        background: linear-gradient(180deg, rgba(13,110,253,1) 0%, rgba(13,110,253,0.7483368347338936) 25%, rgba(13,110,253,0.5046393557422969) 50%, rgba(13,110,253,0.25253851540616246) 100%);
+    }
+
+    .nav--bar:hover {
+        background: linear-gradient(180deg, rgba(13,110,253,1) 0%, rgba(13,110,253,0.7483368347338936) 25%, rgba(13,110,253,0.5046393557422969) 50%, rgba(13,110,253,0.25253851540616246) 100%);
+    }
+
+    /* ESTILOS LOGOS */
+    
+    .logo__container {
+        display: flex;
+        justify-content: center;
+    }
+
+     /* ESTILOS PRODUCTOS */
+
+     .category__title--beer {
+        margin: $margin/10 auto; 
+        height: 90vh;
+        width: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly ;
+        align-items: center;
+        background-image: url("../img/fondo-cerveza1.jpg");
+        background-position: bottom;
+        background-size: cover;        
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .category__title--accesories {
+        margin: $margin/10 auto;    
+        height: 90vh;
+        width: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly ;
+        align-items: center;
+        background-image: url("../img/choperas.jpg");
+        background-position: bottom;
+        background-size: cover;        
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .category__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .category__container--item {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+        margin: $margin/20 $margin/12;
+        padding: 10px 0;
+        background-color: #fff;
+    }
+
+    .category__container--item:hover {        
+        border: #6d70729a solid 1.5px;
+        box-shadow: 11px 6px 7px -9px rgba(0,0,0,0.59);
+    } 
+
+    /* ESTILOS SERVICIOS DE COMPRA */
+    
+    .services {                 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        margin: 0 130px;
+        
+        
+    }
+    
+    .services__items {    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 20vw;
+        margin: $margin/5 0;
+
+    }
+
+    /* ESTILOS SUSCRIPCION NEWSLETTER */
+    .suscription {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;        
+        align-items: center;
+        height: 40vh;
+        background-color: #0d6efd;
+
+        fieldset div {
+            display: flex;
+            flex-direction: row;
+            border: none;        
+            align-items: center;
+            width: max-content;                      
+        }  
+    
+}
+
+    .suscription__items {
+        display: flex;
+        flex-direction: column;
+        border: none;  
+        justify-content: flex-end;      
+        align-items: center;
+        width: max-content;
+        
+    }
+
+    .suscription__items--input1 {
+        
+        background-color: white;
+        opacity: 100;
+        width: 60vw;
+        height: 65px;
+        margin: 0 $margin/6;
+        border: none;
+        border-radius: 10px;
+        font-size: auto;
+        text-transform: uppercase; 
+    }
+
+    .suscription__items--input2 {
+        background-color: #001155;
+        border: none;
+        width: 7vw;
+        height: 65px;
+        margin-left: 5px;
+        margin-top: 5px;
+        float: right; 
+        color: #fff;     
+        
+    }
+
+   
+
+    /* ESTILOS CONTACTO */
+    .contacto {
+        width: 50%;
+        margin: $margin/5 auto;
+        border: 1px #4c555a8c solid;
+        padding: 20px;
+        
+    }
+
+    /*  ESTILOS PIE DE PAGINA */
+    .logo__redes {
+        display: flex;
+        justify-content: flex-end;
+        margin: $margin/10 $margin/3;
+
+
+    }
+
+    footer {
+
+        background-color: #0d6efd;
+        padding-top: 10px;
+
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            margin: 0 200px;
+        }
+    }
+    
+    .copyright {
+        display: inline;
+    }
+    
+}

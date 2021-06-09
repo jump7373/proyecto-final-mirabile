@@ -1,0 +1,720 @@
+@import "variables";
+
+
+@media only screen and (max-width: 480px) {
+    
+    /* ESTILOS GENERALES */
+
+    body, .body--background {
+        font-family: 'Source Sans Pro', sans-serif;
+
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #fafafa;
+        transform: scale(0.9, 0.9);
+        transition-duration: 0.9ms;        
+    }
+
+    .logo__small--title {
+        display: none;
+        
+    }
+
+    /* ESTILOS PRODUCTOS */
+
+    .category__title--beer {
+        
+        p {
+            font-size: 2rem;
+            font-weight: $font-weight*6;
+            margin-top: 100px;
+            width: 90%;
+            text-align: center;
+            letter-spacing: normal;
+            color: #f0f5f9;
+            
+        }
+
+        h1 {
+
+            color: #A6791F;
+            font-size: 5.2rem;
+            font-weight: $font-weight*9;
+            margin: 15px;
+
+        }
+    }
+
+    .category__title--accesories {
+        
+        p {
+            font-size: 2rem;
+            font-weight: $font-weight*6;
+            margin-top: 100px;
+            width: 90%;
+            text-align: center;
+            letter-spacing: normal;
+            color: #f0f5f9;
+            
+        }
+
+        h1 {
+
+            color: #A6791F;
+            font-size: 4.5rem;
+            font-weight: $font-weight*9;
+            margin: 15px;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .category {
+        h2 {
+            color: #f2c15e;
+            background-color: #001155;
+            width: 95%;
+            height: auto;
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px 0 0 5px;
+            border-radius: 0 50px 0 50px;
+            font-size: 2.5rem;
+        }
+    }
+
+    .category__container--item {
+        
+        h3 {
+            text-transform: uppercase;
+            color: #4242c9;
+            font-weight: $font-weight*6;
+            font-style: italic;
+            font-size: 1.2rem;
+            margin: auto 0;
+            text-align: center;
+        }
+
+        h4 {
+            text-transform: capitalize;
+            text-align: center;
+            font-weight: $font-weight*4;
+        }
+        
+    }
+
+    /* ESTILOS SERVICIOS DE COMPRA */
+
+    .services__items {        
+
+        h3{
+            font-size: 2.3em;
+            color: #001155;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: $font-weight*6;
+            margin-bottom: 10px;
+        }
+    }
+
+    /* ESTILOS SUCRIPCION NEWSLETTER */
+
+    .suscription {        
+
+    h4 {        
+        color: #001155;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: $font-weight*6;
+        width: auto;
+        margin: 0;       
+    } 
+
+    span {
+        color: #fff;
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }   
+}
+
+    /* ESTILOS PIE DE PÁGINA */
+    footer {      
+        text-align: center;    
+        background-color: $blue;
+        padding-top: 10px; 
+
+        ul {
+            list-style: none;
+            margin: 10px;    
+        }
+
+        li {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-style: italic;
+            font-size: 1.2rem;
+            text-align: center; 
+            font-weight: $font-weight*4;       
+        }
+    }
+
+    /* ESTILOS MAPA DEL SITIO */
+
+    .site-map {
+        
+        border: solid 1px black;
+        width: max-content;
+        margin: 15px auto;
+        
+        background-color: white;
+        h2 {
+            text-transform: uppercase;
+            color: #001155;
+            font-size: 1.9rem;
+            margin-bottom: 15px;
+            padding: 0 10px;            
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                a {
+                    color: #0021a1;
+                    font-size: 1.2rem;
+                    text-align: left;
+                }
+            }
+        }
+
+        
+    }
+
+    /* ESTILOS CONTACTO */
+    .contacto {
+        
+        h2 {
+            color: #0021a1;
+            font-weight: $font-weight*6;
+            text-transform: capitalize;    
+            letter-spacing: 0px;
+            text-align: center;
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    /* ESTILOS GENERALES */
+    body, .body--background {
+        font-family: 'Source Sans Pro', sans-serif;
+        
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:active {
+        color: #fafafa;
+        transform: scale(0.9, 0.9);
+        transition-duration: 0.9ms;
+        color: #0021a1;
+    }
+
+    .logo__small--title {
+        display: none;
+        
+    }
+
+    /* ESTILOS SLIDERS */
+
+    .carousel-caption {
+        h2 {
+            color: #fff;
+            font-size: 1.4rem;
+            padding-top: 50px;
+        }
+    }
+
+    /* ESTILOS PRODUCTOS */
+
+    .carousel-caption {
+        h5 {
+            color: white;
+            font-size: 1.8rem;
+        }
+    }
+
+    .category__title--beer {
+        
+        p {
+            font-size: 2rem;
+            font-weight: $font-weight*6;
+            margin-top: 100px;
+            width: 90%;
+            text-align: center;
+            letter-spacing: normal;
+            color: #f0f5f9;
+            
+        }
+
+        h1 {
+
+            color: #A6791F;
+            font-size: 5.2rem;
+            font-weight: $font-weight*9;
+            margin: 15px;
+
+        }
+    }
+
+    .category__title--accesories {
+        p {
+            font-size: 2rem;
+            font-weight: $font-weight*6;
+            margin-top: 100px;
+            width: 90%;
+            text-align: center;
+            letter-spacing: normal;
+            color: #f0f5f9;
+            
+        }
+
+        h1 {
+
+            color: #A6791F;
+            font-size: 5.2rem;
+            font-weight: $font-weight*9;
+            margin: 15px;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .category {
+        h2 {
+            color: #f2c15e;
+            background-color: #001155;
+            width: 95%;
+            height: auto;
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px 0 0 5px;
+            border-radius: 0 50px 0 50px;
+            font-size: 4rem;
+        }
+    }
+
+       
+    .category__container--item {
+    
+        h3 {
+            text-transform: uppercase;
+            color: #4242c9;
+            font-weight: $font-weight*6;
+            font-style: italic;
+            font-size: 1.2rem;
+            margin: auto 0;
+            text-align: center;
+        }
+
+        h4 {
+            text-transform: capitalize;
+            text-align: center;
+            font-weight: $font-weight*4;
+        }
+        
+    }
+
+    /* ESTILOS SERVICIOS DE COMPRA */
+        
+    .services__items {    
+    
+        h3{
+            font-size: 1.6em;
+            color: #001155;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: $font-weight*6;
+            margin-bottom: 10px;
+        }
+    }
+
+    
+    /* ESTILOS SUSCRIPCIÓN NEWSLETTER */
+    
+    .suscription {
+    
+    h4 {        
+        color: #001155;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: $font-weight*6;
+        width: auto;
+        margin-left: 5px;       
+    }          
+
+    span {
+        color: #fff;
+        font-size: 1.1rem;
+        margin-left: 5px;
+    }
+
+    
+}
+
+/* ESTILOS PIE DE PAGINA */
+        
+footer {      
+    text-align: center;    
+        
+    ul {
+        list-style: none;
+        margin: 0;    
+    }
+
+    li {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 1.2rem;
+        text-align: center; 
+        font-weight: $font-weight*4;       
+    }
+}
+
+/* ESTILOS MAPA DEL SITIO */
+
+.site-map {
+    text-align: center;
+    border: solid 1px black;
+    width: max-content;
+    margin: 15px auto;
+    padding: 0 10%;
+    background-color: white;
+    h2 {
+        text-transform: uppercase;
+        color: #001155;
+        margin-bottom: 15px;            
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            a {
+                color: #0021a1;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    
+}
+
+/* ESTILOS CONTACTO */
+
+.contacto {
+    
+    h2 {
+        color: #0021a1;
+        font-weight: $font-weight*6;
+        text-transform: capitalize;    
+        letter-spacing: 0px;
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+}
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 599px) {
+    /* ESTILOS SERVICIOS DE COMPRA */
+    .services__items {    
+
+        h3{
+            font-size: 1.1em;
+            color: #001155;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: $font-weight*6;
+            margin-bottom: 10px;
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* ESTILOS PRODUCTOS */
+    .category__container--item {
+        
+        h3 {
+            text-transform: uppercase;
+            color: #4242c9;
+            font-weight: $font-weight*6;
+            font-style: italic;
+            font-size: 1.5rem;
+            margin: auto 0;
+            text-align: center;
+        }
+        
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    
+    /* ESTILOS GENERALES */
+    body, .body--background {
+        font-family: 'Source Sans Pro', sans-serif;
+        
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:active {
+        color: #fafafa;
+        transform: scale(0.9, 0.9);
+        transition-duration: 0.9ms;
+        color: #0021a1;
+    }    
+
+    .logo__small--title {
+        display: none;
+        
+    }
+
+    /* ESTILOS SLIDERS */
+
+    .carousel-caption {
+        h2 {
+            color: #fff;
+            font-size: 1.8rem;
+            padding-top: 50px;
+            text-transform: uppercase;
+        }
+    }
+
+    /* ESTILOS PRODUCTOS */
+
+    .carousel-caption {
+        h5 {
+            color: white;
+            font-size: 1.8rem;
+        }
+    }
+
+     /* ESTILOS PRODUCTOS */
+
+     .category__title--beer {
+        
+        p {
+            font-size: 2rem;
+            font-weight: $font-weight*6;
+            margin-top: 100px;
+            width: 45%;
+            letter-spacing: normal;
+            color: #f0f5f9;
+            
+        }
+
+        h1 {
+
+            color: #A6791F;
+            font-size: 6.2rem;
+            font-weight: 900;
+            margin-bottom: 50px;
+
+        }
+    }
+
+    
+
+    .category__title--accesories {
+        
+        p {
+            font-size: 2rem;
+            font-weight: $font-weight*6;
+            margin-top: 100px;
+            width: 90%;
+            text-align: center;
+            letter-spacing: normal;
+            color: #f0f5f9;
+        }
+
+        h1 {
+            color: #A6791F;
+            font-size: 5.2rem;
+            font-weight: $font-weight*9;
+            margin: 15px;
+            text-transform: capitalize;
+        }
+    }
+
+    
+    .category {
+        h2 {
+            color: #f2c15e;
+            background-color: #001155;
+            width: 75%;
+            height: auto;
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px 0 0 5px;
+            border-radius: 0 50px 0 50px;
+            font-size: 4rem;
+        }
+    }
+
+    .category__container--item {
+        
+        h3 {
+            text-transform: uppercase;
+            color: #4242c9;
+            font-weight: $font-weight*6;
+            font-style: italic;
+            font-size: 1.2rem;
+            margin: auto 0;
+            text-align: center;
+        }
+
+        h4 {
+            text-transform: capitalize;
+            text-align: center;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        h5 {
+            font-size: 1rem;
+        }
+        
+    }
+
+    /* ESTILOS SERVICIOS DE COMPRA */
+    
+    .services__items {  
+    
+        h3{
+            font-size: 1.6em;
+            color: #001155;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: $font-weight*6;
+            margin-bottom: 10px;
+        }
+        
+    }
+
+        
+    /* ESTILOS SUSCRIPCION NEWSLETTER */
+    .suscription {
+        
+
+    h4 {        
+        color: #001155;
+        text-transform: uppercase;
+        font-size: 4.5rem;
+        font-weight: $font-weight*6;
+        width: auto;
+        margin-left: 5px;       
+    }      
+
+    span {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-left: 5px;
+    }    
+    
+}
+
+    /* ESTILOS CONTACTO */
+    .contacto {
+        
+        h2 {
+            color: #0021a1;
+            font-weight: $font-weight*6;
+            text-transform: capitalize;    
+            letter-spacing: 0px;
+            text-align: center;
+            font-size: 8rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    /* ESTILOS MAPA DEL SITIO */
+
+    .site-map {
+        text-align: center;
+        border: solid 1px black;
+        width: max-content;
+        margin: 15px auto;
+        padding: 0 10%;
+        background-color: white;
+        h2 {
+            text-transform: uppercase;
+            color: #001155;
+            margin-bottom: 15px;            
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                a {
+                    color: #0021a1;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        
+    }
+
+    /*  ESTILOS PIE DE PAGINA */
+
+    
+        
+    footer {      
+        text-align: center; 
+    
+        ul {
+            list-style: none;
+            margin: 0;    
+        }
+    
+        li {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-style: italic;
+            font-size: 1.2rem;
+            text-align: center; 
+            font-weight: $font-weight*4;       
+        }
+    }
+
+    
+
+
+}
