@@ -1368,7 +1368,11 @@
     text-transform: uppercase;
     text-align: center; }
   .category__button:active {
-    transform: scale(0.9); } }
+    transform: scale(0.9); }
+  /* ESTILOS CONTACTOS */
+  .form--submit {
+    margin: 10px auto;
+    width: 50%; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
   /*ESTILOS PRODUCTOS */
@@ -1382,7 +1386,17 @@
     text-align: center;
     font-size: 1.3rem; }
   .category__button:active {
-    transform: scale(0.9); } }
+    transform: scale(0.9); }
+  /* ESTILOS CONTACTOS */
+  .form--submit {
+    margin: 10px auto;
+    width: 30%; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* ESTILOS CONTACTOS */
+  .form--submit {
+    margin: 10px auto;
+    width: 20%; } }
 
 @media only screen and (min-width: 1025px) {
   /* ESTILOS PRODUCTOS */
@@ -1395,7 +1409,11 @@
     text-align: center;
     font-size: 1rem; }
   .category__button:active {
-    transform: scale(0.9); } }
+    transform: scale(0.9); }
+  /* ESTILOS CONTACTOS */
+  .form--submit {
+    margin: 10px auto;
+    width: 30%; } }
 
 .width-1 {
   width: 10%; }
