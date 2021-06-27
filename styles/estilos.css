@@ -20,7 +20,7 @@
   /* ESTILOS PRODUCTOS */
   .category__title--beer {
     margin: 10px auto;
-    height: 75vw;
+    height: 75vh;
     width: auto;
     text-align: center;
     display: flex;
@@ -32,7 +32,7 @@
     background-size: cover; }
   .category__title--accesories {
     margin: 10px auto;
-    height: 75vw;
+    height: 75vh;
     width: auto;
     text-align: center;
     display: flex;
@@ -366,7 +366,7 @@
   /* ESTILOS PRODUCTOS */
   .category__title--beer {
     margin: 10px auto;
-    height: 90vw;
+    height: 40vw;
     width: auto;
     text-align: center;
     display: flex;
@@ -378,7 +378,7 @@
     background-size: cover; }
   .category__title--accesories {
     margin: 10px auto;
-    height: 90vw;
+    height: 40vw;
     width: auto;
     text-align: center;
     display: flex;
@@ -513,9 +513,7 @@
   .category__title--beer p {
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 100px;
     width: 90%;
-    text-align: center;
     letter-spacing: normal;
     color: #f0f5f9;
     filter: drop-shadow(-5px 5px 3px black); }
@@ -523,15 +521,12 @@
     color: #0021a1;
     font-size: 4.5rem;
     font-weight: 900;
-    margin: 15px;
     filter: drop-shadow(-5px 5px 3px black);
     text-transform: capitalize; }
   .category__title--accesories p {
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 100px;
     width: 90%;
-    text-align: center;
     letter-spacing: normal;
     color: #f0f5f9;
     filter: drop-shadow(-5px 5px 3px black); }
@@ -539,7 +534,6 @@
     color: #0021a1;
     font-size: 4.5rem;
     font-weight: 900;
-    margin: 15px;
     text-transform: capitalize;
     filter: drop-shadow(-5px 5px 3px black); }
   .category h2 {
@@ -674,11 +668,9 @@
     margin: 0 auto; }
   /* ESTILOS PRODUCTOS */
   .category__title--beer p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin-top: 100px;
     width: 90%;
-    text-align: center;
     letter-spacing: normal;
     color: #f0f5f9;
     filter: drop-shadow(-5px 5px 3px black); }
@@ -686,15 +678,12 @@
     color: #0021a1;
     font-size: 5.2rem;
     font-weight: 900;
-    margin: 15px;
     filter: drop-shadow(-5px 5px 3px black);
     text-transform: capitalize; }
   .category__title--accesories p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin-top: 100px;
     width: 90%;
-    text-align: center;
     letter-spacing: normal;
     color: #f0f5f9;
     filter: drop-shadow(-5px 5px 3px black); }
@@ -702,7 +691,6 @@
     color: #0021a1;
     font-size: 5.2rem;
     font-weight: 900;
-    margin: 15px;
     text-transform: capitalize;
     filter: drop-shadow(-5px 5px 3px black); }
   .category h2 {
@@ -859,7 +847,6 @@
   .category__title--beer p {
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 100px;
     width: 45%;
     letter-spacing: normal;
     color: #f0f5f9;
@@ -868,15 +855,13 @@
     color: #0021a1;
     font-size: 6.2rem;
     font-weight: 900;
-    margin: 15px;
+    margin: 0 auto;
     text-transform: capitalize;
     filter: drop-shadow(-5px 5px 3px black); }
   .category__title--accesories p {
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 100px;
     width: 45%;
-    text-align: center;
     letter-spacing: normal;
     color: #f0f5f9;
     filter: drop-shadow(-5px 5px 3px black); }
@@ -884,7 +869,6 @@
     color: #0021a1;
     font-size: 6.2rem;
     font-weight: 900;
-    margin: 15px;
     text-transform: capitalize;
     filter: drop-shadow(-5px 5px 3px black); }
   .category h2 {
