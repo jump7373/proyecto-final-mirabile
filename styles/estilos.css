@@ -20,7 +20,7 @@
   /* ESTILOS PRODUCTOS */
   .category__title--beer {
     margin: 10px auto;
-    height: 75vh;
+    height: 75vw;
     width: auto;
     text-align: center;
     display: flex;
@@ -32,7 +32,7 @@
     background-size: cover; }
   .category__title--accesories {
     margin: 10px auto;
-    height: 75vh;
+    height: 75vw;
     width: auto;
     text-align: center;
     display: flex;
@@ -163,7 +163,7 @@
   /* ESTILOS PRODUCTOS */
   .category__title--beer {
     margin: 10px auto;
-    height: 50vh;
+    height: 50vw;
     width: auto;
     text-align: center;
     display: flex;
@@ -175,7 +175,7 @@
     background-size: cover; }
   .category__title--accesories {
     margin: 10px auto;
-    height: 50vh;
+    height: 50vw;
     width: auto;
     text-align: center;
     display: flex;
@@ -366,7 +366,7 @@
   /* ESTILOS PRODUCTOS */
   .category__title--beer {
     margin: 10px auto;
-    height: 90vh;
+    height: 90vw;
     width: auto;
     text-align: center;
     display: flex;
@@ -378,7 +378,7 @@
     background-size: cover; }
   .category__title--accesories {
     margin: 10px auto;
-    height: 90vh;
+    height: 90vw;
     width: auto;
     text-align: center;
     display: flex;
