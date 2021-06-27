@@ -10,6 +10,7 @@
     <!-- Fuentes del HTML -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -24,57 +25,55 @@
     <link rel="shortcut icon" type="image/icon" href="img/logo-cervezame-solo.png">
     <title>Cervezame</title>
 </head>
-<body class="mainGrid">
+<body>
     <!-- Inicio de barra de navegación -->
+
 
 <nav class="navbar navbar-expand-lg navbar-dark btn-primary sticky-top nav--bar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="img/logo-cervezame-solo.png" alt="Logo Cervezame" class="logo__small"><h1 class="logo__small--title">cervezame</h1></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="burger__button">
+            <header>
+                <a href="index.html"><img src="img/logo-cervezame-solo.png" alt="Logo Cervezame" class="logo__small"><h1 class="logo__small--title">cervezame</h1></a>
+            </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active navbar-fontSize" aria-current="page" href="index.html">INICIO</a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="pages/cervezas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                CERVEZAS
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="pages/cervezas.html">VER TODAS</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="pages/cervezas.html#lager.html">LAGER</a></li>
-                <li><a class="dropdown-item" href="pages/cervezas.html#pilsen">PILSEN</a></li>
-                <li><a class="dropdown-item" href="pages/cervezas.html#rojas">ROJAS</a></li>
-                <li><a class="dropdown-item" href="pages/cervezas.html#negras">NEGRAS</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="pages/cervezas.html#ipa">IPA</a></li>
-                <li><a class="dropdown-item" href="pages/cervezas.html#miel">MIEL</a></li>
-                <li><a class="dropdown-item" href="pages/cervezas.html#trigo">TRIGO</a></li>
-            </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ACCESORIOS
-                </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link navbar-fontSize" aria-current="page" href="index.html">inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="pages/cervezas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">cervezas</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="pages/accesorios.html">VER TODOS</a></li>
+                    <li><a class="dropdown-item" href="pages/cervezas.html">todos los estilos</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="pages/accesorios.html#destapadores">DESTAPADORES</a></li>
-                    <li><a class="dropdown-item" href="pages/accesorios.html#conservadoras">CONSERVADORAS</a></li>                                            <li><a class="dropdown-item" href="pages/accesorios.html#choperas">CHOPPERAS</a></li>
-                    <li><a class="dropdown-item" href="pages/accesorios.html#vasos">VASOS</a></li>
+                    <li><a class="dropdown-item" href="pages/lager.html">lager</a></li>
+                    <li><a class="dropdown-item" href="pages/pilsen.html">pilsen</a></li>
+                    <li><a class="dropdown-item" href="pages/rojas.html">rojas</a></li>
+                    <li><a class="dropdown-item" href="pages/negras.html">negras</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="pages/ipa.html">ipa</a></li>
+                    <li><a class="dropdown-item" href="pages/miel.html">miel</a></li>
+                    <li><a class="dropdown-item" href="pages/trigo.html">trigo</a></li>
                 </ul>
                 </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="pages/mapa-del-sitio.html">MAPA DEL SITIO</a>
-            </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">accesorios</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="pages/accesorios.html">todos los accesorios</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="pages/destapadores.html">destapadores</a></li>
+                        <li><a class="dropdown-item" href="pages/conservadoras.html">conservadoras</a></li>
+                        <li><a class="dropdown-item" href="pages/choperas.html">choperas</a></li>
+                        <li><a class="dropdown-item" href="pages/vasos.html">vasos</a></li>
+                    </ul>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">contacto</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -94,22 +93,21 @@
                 <div class="carousel-item active">
                 <img src="img/slider-1.jpg" class="d-block w-100" alt="tabla de fiambres">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2>PROXIMAMENTE <br> tablas de fiambres</h2></BR>
-
+                    <h2>proximamente <br> tablas de fiambres</h2></BR>
                 </div>
                 </div>
                 <div class="carousel-item">
                 <img src="img/slider-2.jpg" class="d-block w-100" alt="vasos de cerveza">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 class="slider--subtitle">La mejor selección de cervezas para vos</h2><br>
-                    <span class="category__button"><a href="pages/cervezas.html">VER TODAS</a></span>
+                    <h2 class="slider--subtitle">la mejor selección de cervezas para vos</h2><br>
+                    <span class="category__button"><a href="pages/cervezas.html">cervezas</a></span>
                 </div>
                 </div>
                 <div class="carousel-item">
                 <img src="img/slider-3.jpg" class="d-block w-100" alt="destapador de cerveza">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2>Tenemos los mejores accesorios para tu cerveza</h2><br>
-                    <span class="category__button"><a href="pages/accesorios.html" class="category__button">ACCESORIOS</a></span>
+                    <h2>tenemos los mejores accesorios para tu cerveza</h2><br>
+                    <span class="category__button"><a href="pages/accesorios.html" class="category__button">accesorios</a></span>
                 </div>
                 </div>
             </div>
@@ -121,442 +119,311 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-            </div>
+        </div>
     </section>
-</main>
+
 <!-- Fin slider -->
 
-<!-- Inicio Productos Destacados -->
-<section>
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button navbar-dark btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Cervezas Recomendadas
-            </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show body--background" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="category__container">
-
-                <div class="category__container--item">
-
-                    <img src="img/cervezas/cervezas-nacional-patagonia-kune.jpg" alt="Lata de cerveza Patagonia Kune">
-                    <h3 class="marca">patagonia kune</h3>
-                    <h4 class="medida">lata 473ml</h4>
-                    <h5 class="precio">$90</h5>
-
-                    <form class="cantidad">
-                        <select  class="form-select" aria-label="Default select example">
-                        <option selected>Cantidad</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        </select><br><br>
-                    </form>
-                    <span class="category__button">agregar al carrito</span>
-                </div>
-
-                <div class="category__container--item">
-                    <img src="img/cervezas/cervezas-internacional-bavaria-negra.jpg" alt="Lata de cerveza Bavaria Negra">
-                    <h3 class="marca">bavaria 8·6 negra</h3>
-                    <h4 class="medida">lata 473ml</h4>
-                    <h5 class="precio">$150</h5>
-
-                    <form class="cantidad">
-                        <select  class="form-select" aria-label="Default select example">
-                        <option selected>Cantidad</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        </select><br><br>
-                    </form>
-                    <span class="category__button">agregar al carrito</span>
-                </div>
-
-                <div class="category__container--item">
-                    <img src="img/cervezas/cervezas-internacional-amstel-lager.jpg" alt="Lata de cerveza amstel lager">
-                    <h3 class="marca">amstel lager</h3>
-                    <h4 class="medida">lata 473ml</h4>
-                    <h5 class="precio"> $100</h5>
-
-                    <form class="cantidad">
-                        <select  class="form-select" aria-label="Default select example">
-                        <option selected>Cantidad</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        </select><br><br>
-                    </form>
-                    <span class="category__button">agregar al carrito</span>
-                </div>
-
-                <div class="category__container--item">
-                    <img src="img/cervezas/cervezas-internacional-bear-trigo-oscuro.jpg" alt="Lata de cerveza Bear Trigo Oscuro">
-                    <h3 class="marca">bear trigo oscuro</h3>
-                    <h4 class="medida">lata 473ml</h4>
-                    <h5 class="precio">$150</h5>
-                    <form class="cantidad">
-                        <select  class="form-select" aria-label="Default select example">
-                        <option selected>Cantidad</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        </select><br><br>
-                    </form>
-                    <span class="category__button">agregar al carrito</span>
-                </div>
-
-                <div class="category__container--item">
-                    <img src="img/cervezas/cervezas-internacional-lager-oranjeboom.jpg" alt="Lata de cerveza Oranjeboom Lager">
-                    <h3 class="marca">oranjeboom lager</h3>
-                    <h4 class="medida">lata 473ml</h4>
-                    <h5 class="precio">$180</h5>
-                    <form class="cantidad">                            
-                        <select  class="form-select" aria-label="Default select example">
-                        <option selected>Cantidad</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        </select><br><br>                                    
-                    </form>
-                    <span class="category__button">agregar al carrito</span>
-                </div>
-
-                <div class="category__container--item">
-                    <img src="img/cervezas/cervezas-internacional-urquell-pilsen.jpg" alt="Lata de cerveza Pilsner urquell">
-                    <h3 class="marca">pilsner urquell</h3>
-                    <h4 class="medida">lata 473ml</h4>
-                    <h5 class="precio">$150</h5>
-                    <form class="cantidad">
-                        <select  class="form-select" aria-label="Default select example">
-                        <option selected>Cantidad</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        </select><br><br>
-                    </form>
-                    <span class="category__button">agregar al carrito</span>
-                </div>
-
+<!-- Inicio servicios -->
+    <section>
+        <div class="services">
+            <div class="services__items">
+                <h3>compra <br> online </h3>
+                <img src="img/fotos-de-cervezas.png" alt="icono chopps de cerveza">
             </div>
 
+            <div class="services__items">
+                <h3>todos los <br>medios de pago</h3>
+                <img src="img/tarjetas.png" alt="icono tarjeta de credito">
+            </div>
+
+            <div class="services__items">
+                <h3>envíos a <br> todo el país</h3>
+                <img src="img/camion.png" alt="icono camion">
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed navbar-dark btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accesorios Destacados
-            </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse body--background" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                
-                <div class="category__container">
-                    <div class="category__container--item">
-                        <img src="img/accesorios/accesorios-chopera-barril.jpg" alt="choppera con forma de barril">
-                        <h3 class="marca">choppera barril</h3>
-                        <h4 class="medida">tamaño grande</h4>
-                        <h5 class="precio"> $10000</h5>
-                        <form class="cantidad">                            
-                            <select  class="form-select" aria-label="Default select example">
-                            <option selected>Cantidad</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            </select><br><br>                                    
-                        </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div>
-                    
-                    <div class="category__container--item">
-                        <img src="img/accesorios/accesorios-chopera-simple.jpg" alt="choppera para botella de cerveza">
-                        <h3 class="marca">barril de mesa</h3>
-                        <h4 class="medida">para envase de 1L</h4>
-                        <h5 class="precio"> $10000</h5>
-                        <form class="cantidad">                            
-                            <select  class="form-select" aria-label="Default select example">
-                            <option selected>Cantidad</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            </select><br><br>                                    
-                        </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div>
+    </section>
+    <!-- Fin de servicios -->
 
-                    <div class="category__container--item">
-                        <img src="img/accesorios/accesorios-conservadora-brahma-inflable.jpg" alt="conservadora de cerveza inflable brahma">
-                        <h3 class="marca">conservadora brahma</h3>
-                        <h4 class="medida">inflable</h4>
-                        <h5 class="precio"> $5000</h5>
-                        <form class="cantidad">                            
-                            <select  class="form-select" aria-label="Default select example">
-                            <option selected>Cantidad</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            </select><br><br>                                    
-                        </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div>                       
-
-                    <div class="category__container--item">
-                        <img src="img/accesorios/accesorios-vasos-patagonia.jpg" alt="vaso de cerveza patagonia">
-                        <h3 class="marca">vasos patagonia trigo</h3>
-                        <h4 class="medida">350 ML</h4>
-                        <h5 class="precio"> $350 C/U</h5>
-                        <form class="cantidad">                            
-                            <select  class="form-select" aria-label="Default select example">
-                            <option selected>Cantidad</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            </select><br><br>                                    
-                        </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div>
-
-                    <div class="category__container--item">
-                        <img src="img/accesorios/accesorios-destapador-pared-stella.jpg" alt="destapador de cerveza de pared Stella Artois">
-                        <h3 class="marca">destapador stella artois</h3>
-                        <h4 class="medida">350 ML</h4>
-                        <h5 class="precio"> $350 C/U</h5>
-                        <form class="cantidad">                            
-                            <select  class="form-select" aria-label="Default select example">
-                            <option selected>Cantidad</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            </select><br><br>                                    
-                        </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div> 
-
-                    <div class="category__container--item">
-                        <img src="img/accesorios/accesorios-chopera-dispenser.jpg" alt="choppera dispenser">
-                        <h3 class="marca">dispenser recto</h3>
-                        <h4 class="medida">capacidad 1.7L</h4>
-                        <h5 class="precio"> $5000</h5>
-                        <form class="cantidad">                            
-                            <select  class="form-select" aria-label="Default select example">
-                            <option selected>Cantidad</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            </select><br><br>                                    
-                        </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div>   
-                </div>                      
-                                
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed navbar-dark btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Productos más vendidos
-            </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse body--background" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <div class="category__container">
-                    <div class="category__container--item">
-                        <img src="img/accesorios/accesorios-chopera-mesa.jpg" alt="choppera de mesa">
-                            <h3 class="marca">choppera alumio de mesa</h3>
-                            <h4 class="medida">para barril de 5L</h4>
-                            <h5 class="precio"> $10000</h5>
-                            <form class="cantidad">                            
-                                <select  class="form-select" aria-label="Default select example">
-                                <option selected>Cantidad</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                </select><br><br>                                    
-                            </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div>
-                    
-                    <div class="category__container--item">
-                        <img src="img/cervezas/cervezas-nacional-patagonia-senderosur.jpg" alt="Lata de cerveza Patagonia Sendero Sur">
-                            <h3 class="marca">patagonia sendero</h3>
-                            <h4 class="medida">lata 473ml</h4>
-                            <h5 class="precio">$90</h5>
-                            <form class="cantidad">                            
-                                <select  class="form-select" aria-label="Default select example">
-                                <option selected>Cantidad</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                </select><br><br>                                    
-                            </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div>
-
-                    <div class="category__container--item">
-                        <img src="img/accesorios/accesorios-conservadora-brahma-inflable.jpg" alt="conservadora de cerveza inflable brahma">
-                        <h3 class="marca">conservadora brahma</h3>
-                        <h4 class="medida">inflable</h4>
-                        <h5 class="precio"> $5000</h5>
-                        <form class="cantidad">                            
-                            <select  class="form-select" aria-label="Default select example">
-                            <option selected>Cantidad</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            </select><br><br>                                    
-                        </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div>                       
-
-                    <div class="category__container--item">
-                        <img src="img/accesorios/accesorios-vasos-patagonia.jpg" alt="vaso de cerveza patagonia">
-                        <h3 class="marca">vasos patagonia trigo</h3>
-                        <h4 class="medida">350 ML</h4>
-                        <h5 class="precio"> $350 C/U</h5>
-                        <form class="cantidad">                            
-                            <select  class="form-select" aria-label="Default select example">
-                            <option selected>Cantidad</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            </select><br><br>                                    
-                        </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div>
-
-                    <div class="category__container--item">
-                        <img src="img/cervezas/cervezas-nacional-patagonia-weise.jpg" alt="Lata de cerveza Patagonia Weise">
-                            <h3 class="marca">patagonia weise</h3>
-                            <h4 class="medida">lata 473ml</h4>
-                            <h5 class="precio">$90</h5>
-                            <form class="cantidad">                            
-                                <select  class="form-select" aria-label="Default select example">
-                                <option selected>Cantidad</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                </select><br><br>                                    
-                            </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div> 
-
-                    <div class="category__container--item">
-                        <img src="img/accesorios/accesorios-chopera-dispenser.jpg" alt="choppera dispenser">
-                        <h3 class="marca">dispenser recto</h3>
-                        <h4 class="medida">capacidad 1.7L</h4>
-                        <h5 class="precio"> $5000</h5>
-                        <form class="cantidad">                            
-                            <select  class="form-select" aria-label="Default select example">
-                            <option selected>Cantidad</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            </select><br><br>                                    
-                        </form>
-                        <span class="category__button">agregar al carrito</span>
-                    </div>   
-                </div> 
-            </div>
-            </div>
-        </div>
-    </div>      
+    <!-- Inicio Productos Destacados -->
     
-    
-</section>
+    <section class="category__featured">
+        <div class="category__featured--title">
+            <h2>Nuestras favoritas</h2>
+        </div>
+        <div class="category__container">
+            <div class="category__container--item">
+                <img src="img/cervezas/cervezas-nacional-patagonia-kune.jpg" alt="Lata de cerveza Patagonia Kune">
+                <h3 class="marca">patagonia kune</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$90</h5>
+
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                    <option selected>Cantidad</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="img/cervezas/cervezas-internacional-bavaria-negra.jpg" alt="Lata de cerveza Bavaria Negra">
+                <h3 class="marca">bavaria 8·6 negra</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$150</h5>
+
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                    <option selected>Cantidad</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="img/cervezas/cervezas-internacional-amstel-lager.jpg" alt="Lata de cerveza amstel lager">
+                <h3 class="marca">amstel lager</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio"> $100</h5>
+
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                    <option selected>Cantidad</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="img/cervezas/cervezas-internacional-bear-trigo-oscuro.jpg" alt="Lata de cerveza Bear Trigo Oscuro">
+                <h3 class="marca">bear trigo oscuro</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$150</h5>
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="img/cervezas/cervezas-internacional-lager-oranjeboom.jpg" alt="Lata de cerveza Oranjeboom Lager">
+                <h3 class="marca">oranjeboom lager</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$180</h5>
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="img/cervezas/cervezas-internacional-urquell-pilsen.jpg" alt="Lata de cerveza Pilsner urquell">
+                <h3 class="marca">pilsner urquell</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$150</h5>
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+        </div>
+
+        <h2>Disfrutalas más con esto</h2>
+        <div class="category__container">
+            <div class="category__container--item">
+                <img src="img/accesorios/accesorios-chopera-barril.jpg" alt="choppera con forma de barril">
+                <h3 class="marca">choppera barril</h3>
+                <h4 class="medida">tamaño grande</h4>
+                <h5 class="precio"> $10000</h5>
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="img/accesorios/accesorios-chopera-simple.jpg" alt="choppera para botella de cerveza">
+                <h3 class="marca">barril de mesa</h3>
+                <h4 class="medida">para envase de 1L</h4>
+                <h5 class="precio"> $10000</h5>
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="img/accesorios/accesorios-conservadora-brahma-inflable.jpg" alt="conservadora de cerveza inflable brahma">
+                <h3 class="marca">conservadora brahma</h3>
+                <h4 class="medida">inflable</h4>
+                <h5 class="precio"> $5000</h5>
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="img/accesorios/accesorios-vasos-patagonia.jpg" alt="vaso de cerveza patagonia">
+                <h3 class="marca">vasos patagonia trigo</h3>
+                <h4 class="medida">350 ML</h4>
+                <h5 class="precio"> $350 C/U</h5>
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="img/accesorios/accesorios-destapador-pared-stella.jpg" alt="destapador de cerveza de pared Stella Artois">
+                <h3 class="marca">destapador stella artois</h3>
+                <h4 class="medida">350 ML</h4>
+                <h5 class="precio"> $350 C/U</h5>
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="img/accesorios/accesorios-chopera-dispenser.jpg" alt="choppera dispenser">
+                <h3 class="marca">dispenser recto</h3>
+                <h4 class="medida">capacidad 1.7L</h4>
+                <h5 class="precio"> $5000</h5>
+                <form class="cantidad">
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+        </div>
+    </section>
 <!-- Fin Productos Destacados -->
 
-<!-- Inicio servicios -->
-<div class="services">
-    <div class="services__items">
-        <h3>compra <br> online </h3>
-        <img src="img/fotos-de-cervezas.png" alt="icono chopps de cerveza">
-    </div>
-
-    <div class="services__items">
-        <h3>todos los <br>medios de pago</h3>
-        <img src="img/tarjetas.png" alt="icono tarjeta de credito">
-    </div>
-
-
-    <div class="services__items">
-        <h3>envíos a <br> todo el país</h3>
-        <img src="img/camion.png" alt="icono camion">
-    </div>
-</div>
-<!-- Fin de servicios -->
+    <section>
+        <div class="logo__container">
+            <img src="img/logo-cervezame.png" class="logo__large" alt="Logo cervezame grande">
+        </div>
+    </section>
 
 <!-- Inicio Recibi promociones -->
-
-<div class="suscription">
-    <div>
-        <h4>suscribite</h4>
-        <span>Recibí las novedades y promociones</span>
-    </div>
-    
-    <fieldset>
-        <div class="suscription__items">
-        <input type="mail" placeholder="correo electrónico" class="suscription__items--input1">
-        <input type="submit" value="OK" class="suscription__items--input2">
+    <section>
+        <div class="suscription">
+            <div>
+                <h4>suscribite</h4>
+                <span>Recibí las novedades y promociones</span>
+            </div>
+            <fieldset>
+                <div class="suscription__items">
+                <input type="mail" placeholder="correo electrónico" class="suscription__items--input1">
+                <input type="submit" value="OK" class="suscription__items--input2">
+                </div>
+            </fieldset>
         </div>
-    </fieldset>        
-    
-</div>
-
+    </section>
 <!-- Fin Recibi promociones -->
-    
+</main>
+
 
 <!-- Inicio de pie de página -->
-<div class="logo__container">
-    <img src="img/logo-cervezame.png" alt="Logo cervezame grande" class="logo__large">
-</div>
 <footer>
     <div class="logo__redes">
-    <a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Logo de Facebook"></a>
+    <a href="http://www.facebook.com/jump73" target="_blank"><img src="img/facebook.png" alt="Logo de Facebook"></a>
     <a href="http://www.twitter.com" target="_blank"><img src="img/twitter.png" alt="Logo de Twitter"></a>
     <a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Logo de instagram"></a>
+    <a href="https://wa.me/+541140993739" target="_blank"><img src="img/whatsapp.png" alt="Logo de Whatsapp"></a>
     </div>
-    <nav> 
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/cervezas.html">Cervezas</a></li>
+            <li><a href="pages/accesorios.html">Accesorios</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><a href="pages/mapa-del-sitio.html">Mapa del sitio</a></li>
+        </ul>
+
         <ul>
             <li>Contacto</li>
-            <li>(011)5555-8888</li>
-            <li>whatsapp 11-4099-3739</li>
-            <li>atención@cervezame.com</li>
+            <li><a href="tel:1140993739">11-4099-3739</a></li>
+            <li><a href="https://wa.me/+541140993739" target="_blank">whatsapp</a></li>
+            <li><a href="mailto:jpmirabile@gmail.com">jpmirabile@gmail.com</a></li>
         </ul>
 
         <ul>
@@ -568,9 +435,9 @@
     </nav>
 
     <div class="copyright">
-        <Span>Todos los derechos reservados 2021 </span> <span><a href="http://www.facbook.com" target="_blank">Juan Pablo Mirabile</a></Span>
+        <Span>Todos los derechos reservados 2021 </span> <span><a href="http://www.facbook.com/jump73" target="_blank">Juan Pablo Mirabile</a></Span>
     </div>
-    
+
 </footer>
 <!-- Fin de pie de página -->
 

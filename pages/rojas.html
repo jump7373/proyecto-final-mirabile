@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="cerveza, birra, pedí tu cerveza, cerveza barata">
-    <meta name="description" content="Si la cerveza que queres no está en Cervezame, nosotros la conseguimos. Contacte con nuestro equipo de atención al cliente para pedirnos esa birra que tanto queres y no podes conseguir, que nosotros te la llevamos hasta tu casa.">
-    
+    <meta name="keywords" content="cervezas rojas, cerveza inglesa, cerveza pale ale, red lager">
+    <meta name="description" content="En Cervezame están las mejores red lager del Mundo. Cervezas dulces, suaves e ideales para acompañar cualquier comida.">
     <!-- Fuentes del HTML -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600&display=swap" rel="stylesheet">
@@ -21,11 +20,13 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="../styles/estilos.css">
     
-    <title>Contacto, Cervezame</title>
+    
+    <title>Cervezas rojas</title>
     <link rel="shortcut icon" type="image/icon" href="../img/logo-cervezame-solo.png">
 </head>
 <body>
-   <!-- Inicio de barra de navegación -->
+
+<!-- Inicio de barra de navegación -->
 
 <nav class="navbar navbar-expand-lg navbar-dark btn-primary sticky-top nav--bar">
     <div class="container-fluid">
@@ -79,47 +80,113 @@
 
 <!-- Fin de barra de navegacion -->
 
-<!-- Inicio formulario de contacto -->
-<main>
-    
-    <fieldset class="contacto">
-        <h2>contacto</h2>
-        <form>
-            <div class="form-floating mb-3">
-                <input type="name" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
-                <label for="floatingInput">Nombre y Apellido</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="floatingInput" placeholder="Télefono Celular">
-                <label for="floatingInput">Télefono celular</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Correo electrónico</label>
-            </div>
-            
-            </div>
-            <fieldset class="row mb-3">
-                <legend class="col-form-label col-sm-2 pt-0">Asunto</legend>
-                <div class="col-sm-10">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                    <label class="form-check-label" for="gridRadios1">Consulta</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">Reclamo</label>
-                </div>
+<!-- Inicio de sección de productos -->
+<main>    
+
+    <!-- Inicio de seccion de cervezas rojas -->
+    <div class="category">
+        <h2 id="rojas"><img class="category__img--right" src="../img/chopp-brindis.png" alt="Mano con chopp de cerveza">CERVEZAS ROJAS<img class="category__img--left" src="../img/chopp-brindis.png" alt="Mano con chopp de cerveza"></h2> 
+        <div class="category__container">
+            <div class="category__container--item">
+                <img src="../img/cervezas/cervezas-internacional-bavaria-roja.jpg" alt="Lata de cerveza Bavaria Roja">
+                <h3 class="marca">bavaria 8·6 roja</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$150</h5>
                 
-                </div>
-                <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Escriba el mensaje</label>
-                </div>
-            </fieldset>                
-    </fieldset>
-</main> 
-<!-- Fin formulario de contacto -->
+                <form class="cantidad">                            
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>                                    
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="../img/cervezas/cervezas-nacional-andes-roja.jpg" alt="Lata de cerveza Andes Roja">
+                <h3 class="marca">andes roja</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$90</h5>
+                
+                <form class="cantidad">                            
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>                                    
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="../img/cervezas/cervezas-nacional-patagonia-kune.jpg" alt="Lata de cerveza Patagonia Kune">
+                <h3 class="marca">patagonia kune</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$90</h5>
+                
+                <form class="cantidad">                            
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>                                    
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="../img/cervezas/cervezas-nacional-quilmes-roja.jpg" alt="Lata de cerveza Quilmes Roja">
+                <h3 class="marca">quilmes Roja</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$90</h5>
+                
+                <form class="cantidad">                            
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>                                    
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="../img/cervezas/cervezas-nacional-schneider-roja.jpg" alt="Lata de cerveza Schneider Roja">
+                <h3 class="marca">schneider roja</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$90</h5>
+                
+                <form class="cantidad">                            
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>                                    
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div> 
+        </div>
+    </div> 
+    <!-- Fin de seección de cervezas rojas -->
+
+</main>
+<!-- Fin de sección de productos -->
 
 <section>
     <div class="logo__container">
@@ -143,11 +210,10 @@
             <li><a href="contacto.html">contacto</a></li>
             <li><a href="mapa-del-sitio.html">mapa del sitio</a></li>
         </ul> 
-         
         <ul>
             <li>Contacto</li>
             <li><a href="tel:1140993739">11-4099-3739</a></li>
-            <li><a href="https://wa.me/+541140993739" target="_blank"> whatsapp</a></li>
+            <li><a href="https://wa.me/+541140993739" target="_blank">whatsapp</a></li>
             <li><a href="mailto:jpmirabile@gmail.com">jpmirabile@gmail.com</a></li>
         </ul>
 
@@ -165,6 +231,7 @@
     
 </footer>
 <!-- Fin de pie de página -->
+
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    

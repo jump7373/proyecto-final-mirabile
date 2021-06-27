@@ -4,14 +4,25 @@
     
     .logo__small {
         width: 20%;
-        float: right;
-        margin-top: 10px;
     }
 
     .logo__large {
-        width: 95vw;
-        margin: auto;        
-    }  
+        width: 75vw;
+        margin: 10px auto;
+        position: relative;
+        left: 12.5%;
+
+    }
+
+    /* ESTILOS SERVICIOS DE COMPRA */
+
+    .services__items {
+
+        img {
+            width: 30vw;
+
+        }
+    }
 
     /* ESTILOS PRODUCTOS */
 
@@ -24,16 +35,168 @@
 
     }
 
+    /* ESTILOS CATEGORÍAS */
+
+    .category {
+        h2 {
+            img {
+                width: 15%;
+            }
+        }
+    }
+
+    
+    #lager {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -25px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -25px;
+        }
+    }
+
+    #ipa {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -46px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -46px;
+        }
+    }
+
+    #pilsen {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -25px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -25px;
+        }
+    }
+
+    #rojas {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -25px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -25px;
+        }
+    }
+
+    #negras {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -18px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -18px;
+        }
+    }
+
+    #miel {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -20px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -20px;
+        }
+    }
+
+    #trigo {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -8px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -8px;
+        }
+    }
+
+    #destapadores {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -35px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -35px;
+        }
+    }
+
+    #conservadoras {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -25px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -25px;
+        }
+    }
+
+    #choperas {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -63px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -63px;
+        }
+    }
+
+    #vasos {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -88px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -88px;
+        }
+    }
+
     /* ESTILOS PIE DE PÁGINA */
 
     .logo__redes {
         
         img {
-            width: 70px;    
+            width: 50px;    
         }
     }
-
-
 
 }
 
@@ -42,25 +205,184 @@
     /* ESTILOS LOGOS */
 
     .logo__small {
-        width: 30%;
-        float: left;
-        margin-top: 10px;
+        width: 10%;
+        height: 10%;
+        height: auto;
+        position: relative;
+        top: -10px;
+        left: 10px;
+        filter: drop-shadow(-5px 5px 8px black);
+        
     }
     
     .logo__large {
-        width: 95vw;
-        margin: auto;
-        
+        width: 50vw;
+        margin: 10px auto;
+        position: relative;
+        left: 25%;
     }
 
     /* ESTILOS PRODUCTOS */
 
-       
+    
     .category__container--item {
         
         img {
             width: 75%;
             height: auto;
+        }
+    }
+
+    /* ESTILOS CATEGORÍAS */
+
+    .category {
+        h2 {
+            img {
+                width: 20%;
+            }
+        }
+    }
+
+    #lager {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -80px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -80px;
+        }
+    }
+
+    #ipa {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -115px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -115px;
+        }
+    }
+
+    #pilsen {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -77px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -77px;
+        }
+    }
+
+    #rojas {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -80px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -80px;
+        }
+    }
+
+    #negras {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -70px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -70px;
+        }
+    }
+
+    #miel {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -70px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -70px;
+        }
+    }
+
+    #trigo {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -55px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -55px;
+        }
+    }
+
+    #destapadores {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -95px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -95px;
+        }
+    }
+
+    #conservadoras {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -80px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -80px;
+        }
+    }
+
+    #choperas {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -63px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -63px;
+        }
+    }
+
+    #vasos {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -180px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -180px;
         }
     }
 
@@ -86,18 +408,181 @@
 
 @media screen and (min-width: 481px) and (max-width: 599px) {
 
-
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* ESTILOS PRODUCTOS */
     .category__container--item {
-        
+
         img {
             width: 100%;
             height: auto;
         }   
 
+    }
+
+    /* ESTILOS CATEGORÍAS */
+
+    .category {
+        h2 {
+            img {
+                width: 20%;
+            }
+        }
+    }
+
+    #lager {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -120px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -120px;
+        }
+    }
+
+    #ipa {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -167px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -167px;
+        }
+    }
+
+    #pilsen {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -111px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -111px;
+        }
+    }
+
+    #rojas {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -120px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -120px;
+        }
+    }
+
+    #negras {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -98px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -98px;
+        }
+    }
+
+    #miel {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -100px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -100px;
+        }
+    }
+
+    #trigo {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -78px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -78px;
+        }
+    }
+
+    .category__img--right {
+        transform: scaleX(-1);
+        position: relative;
+        left: -65px;
+    }
+
+    .category__img--left {
+        position: relative;
+        right: -65px;
+    }
+
+    #destapadores {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -165px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -165px;
+        }
+    }
+
+    #conservadoras {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -145px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -145px;
+        }
+    }
+
+    #choperas {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -210px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -210px;
+        }
+    }
+
+    #vasos {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -250px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -250px;
+        }
     }
 
 }
@@ -107,14 +592,12 @@
     /* ESTILOS LOGOS */
     .logo__small {
         width: 10%;
-        float: left;
-        margin-top: 10px;
+        margin-left: 10px;
+        filter: drop-shadow(-5px 5px 8px black);
     }
 
     .logo__large {
         width: 30vw;
-        margin-right: 0 auto;
-
     }
 
     .category__container--item {
@@ -124,6 +607,159 @@
             height: auto;
         }
 
+    }
+
+    /* ESTILOS CATEGORÍAS */
+
+    .category {
+        h2 {
+            img {
+                width: 20%;
+            }
+        }
+    }
+
+    #lager {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -120px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -120px;
+        }
+    }
+
+    #ipa {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -167px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -167px;
+        }
+    }
+
+    #pilsen {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -111px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -111px;
+        }
+    }
+
+    #rojas {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -120px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -120px;
+        }
+    }
+
+    #negras {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -98px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -98px;
+        }
+    }
+
+    #miel {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -100px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -100px;
+        }
+    }
+
+    #trigo {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -78px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -78px;
+        }
+    }
+
+    #destapadores {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -140px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -140px;
+        }
+    }
+
+    #conservadoras {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -115px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -115px;
+        }
+    }
+
+    #choperas {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -210px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -210px;
+        }
+    }
+
+    #vasos {
+        .category__img--right {
+            transform: scaleX(-1);
+            position: relative;
+            left: -272px;
+        }
+    
+        .category__img--left {
+            position: relative;
+            right: -272px;
+        }
     }
 
     /* ESTILOS SERVICIOS DE COMPRA */
@@ -141,10 +777,11 @@
         img {
             width: 50px;
             filter: grayscale(1);
+            margin: 0.8rem;
         }
 
         img:hover {
-            filter: opacity(0.8);
+            filter: opacity(1);
         }
     }
 }

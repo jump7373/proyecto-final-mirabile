@@ -9,6 +9,7 @@
     <!-- Fuentes del HTML -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -26,777 +27,738 @@
 <body>
 
 <!-- Inicio de barra de navegación -->
+
 <nav class="navbar navbar-expand-lg navbar-dark btn-primary sticky-top nav--bar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img src="../img/logo-cervezame-solo.png" alt="Logo de Cervezame" class="logo__small"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="burger__button">
+            <header>
+                <a href="../index.html"><img src="../img/logo-cervezame-solo.png" alt="Logo Cervezame" class="logo__small"><h1 class="logo__small--title">cervezame</h1></a>
+            </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
-            </li>                
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="cervezas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                CERVEZAS
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item active" href="cervezas.html">VER TODAS</a></li>
-                <li><hr class="dropdown-divider"></li>                
-                <li><a class="dropdown-item" href="cervezas.html#lager">LAGER</a></li>
-                <li><a class="dropdown-item" href="cervezas.html#pilsen">PILSEN</a></li>
-                <li><a class="dropdown-item" href="cervezas.html#rojas">ROJAS</a></li>
-                <li><a class="dropdown-item" href="cervezas.html#negras">NEGRAS</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="cervezas.html#ipa">IPA</a></li>                    
-                <li><a class="dropdown-item" href="cervezas.html#miel">MIEL</a></li>
-                <li><a class="dropdown-item" href="cervezas.html#trigo">TRIGO</a></li>
-            </ul>
-            </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="cervezas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">cervezas</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item active" href="cervezas.html">todos los estilos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="lager.html">lager</a></li>
+                        <li><a class="dropdown-item" href="pilsen.html">pilsen</a></li>
+                        <li><a class="dropdown-item" href="rojas.html">rojas</a></li>
+                        <li><a class="dropdown-item" href="negras.html">negras</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="ipa.html">ipa</a></li>
+                        <li><a class="dropdown-item" href="miel.html">miel</a></li>
+                        <li><a class="dropdown-item" href="trigo.html">trigo</a></li>
+                    </ul>
+                </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="accesorios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ACCESORIOS
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="accesorios.html">VER TODOS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="accesorios.html#destapadores">DESTAPADORES</a></li>
-                    <li><a class="dropdown-item" href="accesorios.html#conservadoras">CONSERVADORAS</a></li>                        
-                    <li><a class="dropdown-item" href="accesorios.html#choperas">CHOPPERAS</a></li>
-                    <li><a class="dropdown-item" href="accesorios.html#vasos">VASOS</a></li>                        
-                </ul>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="contacto.html">CONTACTO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="mapa-del-sitio.html">MAPA DEL SITIO</a>
-            </li>
-            </ul>            
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="accesorios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">accesorios</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="accesorios.html">todos los accesorios</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="destapadores.html">destapadores</a></li>
+                        <li><a class="dropdown-item" href="conservadoras.html">conservadoras</a></li>
+                        <li><a class="dropdown-item" href="choperas.html">choperas</a></li>
+                        <li><a class="dropdown-item" href="vasos.html">vasos</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">contacto</a>
+                </li>
+
+            </ul>
         </div>
     </div>
 </nav>
-<!-- Fin de barra de navegación -->
+
+<!-- Fin de barra de navegacion -->
 
 <!-- Inicio de sección de productos -->
 <main>    
     <div class="category__title--beer">
-        <h1>Cervezas</h1>
+        <h2>cervezas</h2>
         <p>Lo único que hace falta para que la gente distinta se lleve bien es una interes común y...</p>
     </div>
 
     <!-- Inicio se sección cervezas rubias -->
-    <div class="category">
-        <h2 id="lager">CERVEZAS RUBIAS</h2>
-        <div class="category__container">
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-internacional-amstel-lager.jpg" alt="Lata de cerveza amstel lager">
-                <h3 class="marca">amstel lager</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio"> $100</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>                                        
+
+<div class="category__container">
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-internacional-amstel-lager.jpg" alt="Lata de cerveza amstel lager">
+        <h3 class="marca">amstel lager</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio"> $100</h5>
         
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-internacional-bear-lager.jpg" alt="Lata de cerveza Bear Lager">
-                <h3 class="marca">bear lager</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$150</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>                                        
 
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-internacional-lager-oranjeboom.jpg" alt="Lata de cerveza Oranjeboom Lager">
-                <h3 class="marca">oranjeboom lager</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$180</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-1890-lager.jpg" alt="Lata de cerveza 1890 Lager">
-                <h3 class="marca">1890 lager</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-patagonia-lager.jpg" alt="Lata de cerveza Patagonia Lager">
-                <h3 class="marca">patagonia lager</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-brahma-lager.jpg" alt="Lata de cerveza Brahma Lager">
-                <h3 class="marca">brahma lager</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-patagonia-senderosur.jpg" alt="Lata de cerveza Patagonia Sendero Sur">
-                <h3 class="marca">patagonia sendero</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-quilmes-rubia.jpg" alt="Lata de cerveza Quilmes Lager">
-                <h3 class="marca">quilmes Lager</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-schneider-lager.jpg" alt="Lata de cerveza Schneider Lager">
-                <h3 class="marca">schneider lager</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div> 
-        </div>
-    </div>
-    <!-- Fin de sección cervezas rubias -->
-
-    <!-- Inicio de sección cervezas pilsen -->
-    <div class="category">
-        <h2 id="pilsen">CERVEZAS PILSEN</h2>
-        <div class="category__container">
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-internacional-urquell-pilsen.jpg" alt="Lata de cerveza Pilsner urquell">
-                <h3 class="marca">pilsner urquell</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$150</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-internacional-weidmann-pilsen.jpg" alt="Lata de cerveza Weidmann Pilsen">
-                <h3 class="marca">weidmann pilsen</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$150</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-patagonia-bohemianpilsener.jpg" alt="Lata de cerveza Patagonia Bohemian Pilsener">
-                <h3 class="marca">patagonia pilsen</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>  
-        </div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-internacional-bear-lager.jpg" alt="Lata de cerveza Bear Lager">
+        <h3 class="marca">bear lager</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$150</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
     </div>
 
-    <div class="category">
-        <h2 id="negras">CERVEZAS NEGRA</h2>
-        <div class="category__container">
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-internacional-bavaria-negra.jpg" alt="Lata de cerveza Bavaria Negra">
-                <h3 class="marca">bavaria 8·6 negra</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$150</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-            
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-andes-stout.jpg" alt="Lata de cervez Andes Stout">
-                <h3 class="marca">andes stout</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-antares-scotch.jpg" alt="Lata de cerveza Antares Scotch">
-                <h3 class="marca">antares scotch</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-quilmes-bock.jpg" alt="Lata de cerveza Quilmes Bock">
-                <h3 class="marca">Quilmes Bock</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-quilmes-stout.jpg" alt="Lata de cerveza Quilmes Stout">
-                <h3 class="marca">quilmes stout</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-schneider-negra.jpg" alt="Lata de cerveza Schneider Negra">
-                <h3 class="marca">Schneider negra</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>  
-        </div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-internacional-lager-oranjeboom.jpg" alt="Lata de cerveza Oranjeboom Lager">
+        <h3 class="marca">oranjeboom lager</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$180</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
     </div>
-    <!-- Fin de sección de cervezas pilsen -->
 
-    <!-- Inicio de seccion de cervezas rojas -->
-    <div class="category">
-        <h2 id="rojas">CERVEZAS ROJAS</h2>
-        <div class="category__container">
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-internacional-bavaria-roja.jpg" alt="Lata de cerveza Bavaria Roja">
-                <h3 class="marca">bavaria 8·6 roja</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$150</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-1890-lager.jpg" alt="Lata de cerveza 1890 Lager">
+        <h3 class="marca">1890 lager</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
 
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-andes-roja.jpg" alt="Lata de cerveza Andes Roja">
-                <h3 class="marca">andes roja</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-patagonia-lager.jpg" alt="Lata de cerveza Patagonia Lager">
+        <h3 class="marca">patagonia lager</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
 
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-patagonia-kune.jpg" alt="Lata de cerveza Patagonia Kune">
-                <h3 class="marca">patagonia kune</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-brahma-lager.jpg" alt="Lata de cerveza Brahma Lager">
+        <h3 class="marca">brahma lager</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
 
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-quilmes-roja.jpg" alt="Lata de cerveza Quilmes Roja">
-                <h3 class="marca">quilmes Roja</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-patagonia-senderosur.jpg" alt="Lata de cerveza Patagonia Sendero Sur">
+        <h3 class="marca">patagonia sendero</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
 
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-schneider-roja.jpg" alt="Lata de cerveza Schneider Roja">
-                <h3 class="marca">schneider roja</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div> 
-        </div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-quilmes-rubia.jpg" alt="Lata de cerveza Quilmes Lager">
+        <h3 class="marca">quilmes Lager</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-schneider-lager.jpg" alt="Lata de cerveza Schneider Lager">
+        <h3 class="marca">schneider lager</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
     </div> 
-    <!-- Fin de seección de cervezas rojas -->
+
     
-    <!-- Inicio de sección de cervezas IPA -->
-    <div class="category">
-        <h2 id="ipa">CERVEZAS IPA</h2>
-        <div class="category__container">
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-internacional-bear-ipa.jpg" alt="Lata de cerveza Bear Ipa">
-                <h3 class="marca">bear ipa</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$150</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div> 
-            
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-andes-ipa.jpg" alt="Lata de cerveza Patagonia Andes Ipa">
-                <h3 class="marca">andes ipa</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$105</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
+    
 
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-patagonia-ipa247.jpg" alt="Lata de cerveza Patagonia Ipa 24.7">
-                <h3 class="marca">patagonia ipa 24.7</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-            
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-antares-ipa.jpg" alt="Lata de cerveza Antares Ipa">
-                <h3 class="marca">antares ipa</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-            
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-antares-sessionipa.jpg" alt="Lata de cerveza Antares Session Ipa">
-                <h3 class="marca">antares session ipa</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-patagonia-veraipa.jpg" alt="Lata de cerveza Patagonia Vera Ipa">
-                <h3 class="marca">patagonia vera ipa</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-patagonia-solcitra.jpg" alt="Lata de cerveza Patagonia Sol Citra">
-                <h3 class="marca">patagonia sol citra</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-        </div>
+    
+    
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-internacional-urquell-pilsen.jpg" alt="Lata de cerveza Pilsner urquell">
+        <h3 class="marca">pilsner urquell</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$150</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
     </div>
 
-    <div class="category">
-        <h2 id="miel">CERVEZAS DE MIEL</h2>
-        <div class="category__container">
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-antares-miel.jpg" alt="Lata de cerveza Antares Miel">
-                <h3 class="marca">antares miel</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-patagonia-miel.png" alt="Lata de cerveza Patagonia Miel">
-                <h3 class="marca">patagonia miel</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-        </div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-internacional-weidmann-pilsen.jpg" alt="Lata de cerveza Weidmann Pilsen">
+        <h3 class="marca">weidmann pilsen</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$150</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
     </div>
-    <!-- Fin de sección de cervezas IPA -->
 
-    <!-- Inicio de sección de cervezas de Trigo -->
-    <div class="category">
-        <h2 id="trigo">CERVEZAS DE TRIGO</h2>
-        <div class="category__container">
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-internacional-bear-trigo-oscuro.jpg" alt="Lata de cerveza Bear Trigo Oscuro">
-                <h3 class="marca">bear trigo oscuro</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$150</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-internacional-bear-trigo.jpg" alt="Lata de cerveza Bear Trigo">
-                <h3 class="marca">bear trigo</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$150</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-
-            <div class="category__container--item">
-                <img src="../img/cervezas/cervezas-nacional-patagonia-weise.jpg" alt="Lata de cerveza Patagonia Weise">
-                <h3 class="marca">patagonia weise</h3>
-                <h4 class="medida">lata 473ml</h4>
-                <h5 class="precio">$90</h5>
-                
-                <form class="cantidad">                            
-                    <select  class="form-select" aria-label="Default select example">
-                    <option selected>Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    </select><br><br>                                    
-                </form>
-                <span class="category__button">agregar al carrito</span>
-            </div>
-        </div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-patagonia-bohemianpilsener.jpg" alt="Lata de cerveza Patagonia Bohemian Pilsener">
+        <h3 class="marca">patagonia pilsen</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>  
+        
+    
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-internacional-bavaria-negra.jpg" alt="Lata de cerveza Bavaria Negra">
+        <h3 class="marca">bavaria 8·6 negra</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$150</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
     </div>
-    <!-- Fin de sección de cervezas de trigo -->
+    
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-andes-stout.jpg" alt="Lata de cervez Andes Stout">
+        <h3 class="marca">andes stout</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-antares-scotch.jpg" alt="Lata de cerveza Antares Scotch">
+        <h3 class="marca">antares scotch</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-quilmes-bock.jpg" alt="Lata de cerveza Quilmes Bock">
+        <h3 class="marca">Quilmes Bock</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-quilmes-stout.jpg" alt="Lata de cerveza Quilmes Stout">
+        <h3 class="marca">quilmes stout</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-schneider-negra.jpg" alt="Lata de cerveza Schneider Negra">
+        <h3 class="marca">Schneider negra</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+</div>  
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-internacional-bavaria-roja.jpg" alt="Lata de cerveza Bavaria Roja">
+        <h3 class="marca">bavaria 8·6 roja</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$150</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-andes-roja.jpg" alt="Lata de cerveza Andes Roja">
+        <h3 class="marca">andes roja</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-patagonia-kune.jpg" alt="Lata de cerveza Patagonia Kune">
+        <h3 class="marca">patagonia kune</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-quilmes-roja.jpg" alt="Lata de cerveza Quilmes Roja">
+        <h3 class="marca">quilmes Roja</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-schneider-roja.jpg" alt="Lata de cerveza Schneider Roja">
+        <h3 class="marca">schneider roja</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+</div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-internacional-bear-ipa.jpg" alt="Lata de cerveza Bear Ipa">
+        <h3 class="marca">bear ipa</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$150</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div> 
+    
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-andes-ipa.jpg" alt="Lata de cerveza Patagonia Andes Ipa">
+        <h3 class="marca">andes ipa</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$105</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-patagonia-ipa247.jpg" alt="Lata de cerveza Patagonia Ipa 24.7">
+        <h3 class="marca">patagonia ipa 24.7</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+    
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-antares-ipa.jpg" alt="Lata de cerveza Antares Ipa">
+        <h3 class="marca">antares ipa</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+    
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-antares-sessionipa.jpg" alt="Lata de cerveza Antares Session Ipa">
+        <h3 class="marca">antares session ipa</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-patagonia-veraipa.jpg" alt="Lata de cerveza Patagonia Vera Ipa">
+        <h3 class="marca">patagonia vera ipa</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-patagonia-solcitra.jpg" alt="Lata de cerveza Patagonia Sol Citra">
+        <h3 class="marca">patagonia sol citra</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-antares-miel.jpg" alt="Lata de cerveza Antares Miel">
+        <h3 class="marca">antares miel</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-patagonia-miel.png" alt="Lata de cerveza Patagonia Miel">
+        <h3 class="marca">patagonia miel</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+</div>
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-internacional-bear-trigo-oscuro.jpg" alt="Lata de cerveza Bear Trigo Oscuro">
+        <h3 class="marca">bear trigo oscuro</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$150</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-internacional-bear-trigo.jpg" alt="Lata de cerveza Bear Trigo">
+        <h3 class="marca">bear trigo</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$150</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+
+    <div class="category__container--item">
+        <img src="../img/cervezas/cervezas-nacional-patagonia-weise.jpg" alt="Lata de cerveza Patagonia Weise">
+        <h3 class="marca">patagonia weise</h3>
+        <h4 class="medida">lata 473ml</h4>
+        <h5 class="precio">$90</h5>
+        
+        <form class="cantidad">                            
+            <select  class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>                                    
+        </form>
+        <span class="category__button">agregar al carrito</span>
+    </div>
+</div>
+
 </main>
 <!-- Fin de sección de productos -->
 
@@ -806,16 +768,24 @@
 </div>
 <footer>
     <div class="logo__redes">
-    <a href="http://www.facebook.com" target="_blank"><img src="../img/facebook.png" alt="Logo de Facebook"></a>
+    <a href="http://www.facebook.com/jump73" target="_blank"><img src="../img/facebook.png" alt="Logo de Facebook"></a>
     <a href="http://www.twitter.com" target="_blank"><img src="../img/twitter.png" alt="Logo de Twitter"></a>
     <a href="http://www.instagram.com" target="_blank"><img src="../img/instagram.png" alt="Logo de instagram"></a>
+    <a href="https://wa.me/+541140993739" target="_blank"><img src="../img/whatsapp.png" alt="Logo de Whatsapp"></a>
     </div>
-    <nav> 
+    <nav>
+        <ul>
+            <li><a href="../index.html">inicio</a></li>
+            <li><a href="cervezas.html">cervezas</a></li>
+            <li><a href="accesorios.html">accesorios</a></li>
+            <li><a href="contacto.html">contacto</a></li>
+            <li><a href="mapa-del-sitio.html">mapa del sitio</a></li>
+        </ul> 
         <ul>
             <li>Contacto</li>
-            <li>(011)5555-8888</li>
-            <li>whatsapp 11-4099-3739</li>
-            <li>atención@cervezame.com</li>
+            <li><a href="tel:1140993739">11-4099-3739</a></li>
+            <li><a href="https://wa.me/+541140993739" target="_blank"> whatsapp</a></li>
+            <li><a href="mailto:jpmirabile@gmail.com">jpmirabile@gmail.com</a></li>
         </ul>
 
         <ul>
@@ -827,7 +797,7 @@
     </nav>
 
     <div class="copyright">
-        <Span>Todos los derechos reservados 2021 </span> <span><a href="http://www.facbook.com" target="_blank">Juan Pablo Mirabile</a></Span>
+        <Span>Todos los derechos reservados 2021 </span> <span><a href="http://www.facebook.com/jump73" target="_blank">Juan Pablo Mirabile</a></Span>
     </div>
     
 </footer>

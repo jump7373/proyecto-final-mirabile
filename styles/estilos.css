@@ -1,20 +1,22 @@
 @charset "UTF-8";
-/* PALETA DE COLORES */
-/* 
-#0D6EFD AZUL PRINCIPAL 
-#7DB1FF CELESTE
-#5E9AF2 TURQUESA
-#A6791F MARRÓN OSCURO
-#F2C15E MARRÓN CLARO
-*/
 @media only screen and (max-width: 480px) {
   /* ESTILOS GENERALES */
   body, .body--background {
     background-color: #eaeaea; }
+  /* BARRA DE NAVEGACIÓN */
   .nav--bar {
     margin-bottom: 10px;
     background: #0d6efd;
     background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
+  .burger__button {
+    display: flex; }
+  .dropdown-menu {
+    background: #0d6efd;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
+  /* ESTILOS PRODUCTOS DESTACADOS */
+  .category__featured {
+    background-color: #0d6efd;
+    margin: 10px 0; }
   /* ESTILOS PRODUCTOS */
   .category__title--beer {
     margin: 10px auto;
@@ -27,9 +29,7 @@
     align-items: center;
     background-image: url("../img/fondo-cerveza1.jpg");
     background-position: bottom;
-    background-size: cover;
-    display: flex;
-    flex-direction: column-reverse; }
+    background-size: cover; }
   .category__title--accesories {
     margin: 10px auto;
     height: 75vh;
@@ -41,9 +41,7 @@
     align-items: center;
     background-image: url("../img/choperas.jpg");
     background-position: bottom;
-    background-size: cover;
-    display: flex;
-    flex-direction: column-reverse; }
+    background-size: cover; }
   .category__container {
     display: flex;
     flex-direction: row;
@@ -57,20 +55,21 @@
     flex-direction: column;
     align-items: center;
     width: 48.5%;
-    margin: 5px auto;
+    margin: 5px 2px;
     padding: 10px 0;
     background-color: #fff; }
+  .form-select {
+    margin-bottom: 2rem; }
   /* ESTILOS SERVICIOS DE COMPRA */
   .services {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, 1fr);
-    margin: 20px 0; }
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px auto; }
   .services__items {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px; }
+    margin: 10px auto; }
   /* ESTILOS SUCRIPCION NEWSLETTER */
   .suscription {
     display: flex;
@@ -122,7 +121,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    margin: auto 20px; }
+    margin: 0 auto; }
   /* ESTILOS CONTACTO */
   .contacto {
     width: 90%;
@@ -137,10 +136,27 @@
   /* ESTILOS GENERALES */
   body, .body--background {
     background-color: #eaeaea; }
+  /* ESTILOS BARRA DE NAVEGACIÓN */
   .nav--bar {
     margin-bottom: 10px;
     background: #0d6efd;
     background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
+  .burger__button {
+    display: flex; }
+  header {
+    margin: 10px;
+    height: 40px;
+    width: auto;
+    padding: auto; }
+    header a:hover {
+      color: white; }
+  .dropdown-menu {
+    background: #0d6efd;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
+  /* ESTILOS PRODUCTOS DESTACADOS */
+  .category__featured {
+    background-color: #0d6efd;
+    margin: 10px 0; }
   /* ESTILOS PRODUCTOS */
   .category__title--beer {
     margin: 10px auto;
@@ -153,9 +169,7 @@
     align-items: center;
     background-image: url("../img/fondo-cerveza1.jpg");
     background-position: bottom;
-    background-size: cover;
-    display: flex;
-    flex-direction: column-reverse; }
+    background-size: cover; }
   .category__title--accesories {
     margin: 10px auto;
     height: 50vh;
@@ -167,14 +181,12 @@
     align-items: center;
     background-image: url("../img/choperas.jpg");
     background-position: bottom;
-    background-size: cover;
-    display: flex;
-    flex-direction: column-reverse; }
+    background-size: cover; }
   .category__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%;
     margin: 0 auto; }
   .category__container--item {
@@ -186,6 +198,8 @@
     margin: 5px;
     padding: 10px 0;
     background-color: #fff; }
+  .form-select {
+    margin-bottom: 2rem; }
   /* ESTILOS SERVICIOS DE COMPRA */
   .services {
     display: grid;
@@ -197,7 +211,8 @@
     align-items: center;
     justify-content: space-between;
     width: 10vw;
-    margin: 20px auto; }
+    margin: 20px auto;
+    width: auto; }
   /* ESTILOS SUSCRIPCIÓN NEWSLETTER */
   .suscription {
     display: flex;
@@ -205,7 +220,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    height: 20vh;
+    height: 10vh;
     background-color: #0d6efd; }
     .suscription fieldset div {
       display: flex;
@@ -244,15 +259,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 10px 33.33333px; }
+    margin: 33.33333px; }
   footer {
     background-color: #0d6efd;
     padding-top: 10px; }
     footer nav {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-      margin: 0 auto; }
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center; }
   /* ESTILOS CONTACTO */
   .contacto {
     width: 90%;
@@ -272,18 +286,27 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* ESTILOS PRODUCTOS */
+  .category__container {
+    display: flex;
+    justify-content: flex-start; }
   .category__container--item {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     width: 24%;
-    background-color: #fff; } }
+    background-color: #fff; }
+  /* ESTILOS CONTACTO */
+  .contacto {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px #4c555a8c solid;
+    padding: 20px; } }
 
 @media only screen and (min-width: 1025px) {
   /* ESTILOS GENERALES */
-  body, .body--background {
-    max-width: 1200px;
+  body {
+    max-width: 90vw;
     margin: 0 auto;
     box-shadow: 0px -1px 5px 5px #abada4;
     background-color: #eaeaea; }
@@ -294,10 +317,26 @@
   .nav--bar:hover {
     background: #0d6efd;
     background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
+  .dropdown-menu {
+    background: #0d6efd;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
+  header {
+    margin: 10px;
+    height: 50px;
+    width: auto;
+    padding: auto; }
+    header a:hover {
+      color: white; }
+  .nav-item {
+    margin: 0 10px; }
   /* ESTILOS LOGOS */
   .logo__container {
     display: flex;
     justify-content: center; }
+  /* ESTILOS PRODUCTOS DESTACADOS */
+  .category__featured {
+    background-color: #0d6efd;
+    padding-bottom: 20px; }
   /* ESTILOS PRODUCTOS */
   .category__title--beer {
     margin: 10px auto;
@@ -310,9 +349,7 @@
     align-items: center;
     background-image: url("../img/fondo-cerveza1.jpg");
     background-position: bottom;
-    background-size: cover;
-    display: flex;
-    flex-direction: column-reverse; }
+    background-size: cover; }
   .category__title--accesories {
     margin: 10px auto;
     height: 90vh;
@@ -324,16 +361,14 @@
     align-items: center;
     background-image: url("../img/choperas.jpg");
     background-position: bottom;
-    background-size: cover;
-    display: flex;
-    flex-direction: column-reverse; }
+    background-size: cover; }
   .category__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 100%;
-    margin: 0; }
+    margin-left: 0.5rem; }
   .category__container--item {
     display: flex;
     flex-wrap: nowrap;
@@ -346,6 +381,8 @@
   .category__container--item:hover {
     border: #6d70729a solid 1.5px;
     box-shadow: 11px 6px 7px -9px rgba(0, 0, 0, 0.59); }
+  .form-select {
+    margin-bottom: 2rem; }
   /* ESTILOS SERVICIOS DE COMPRA */
   .services {
     display: grid;
@@ -409,16 +446,14 @@
   /*  ESTILOS PIE DE PAGINA */
   .logo__redes {
     display: flex;
-    justify-content: flex-end;
-    margin: 10px 33.33333px; }
+    justify-content: flex-end; }
   footer {
-    background-color: #0d6efd;
-    padding-top: 10px; }
+    background-color: #0d6efd; }
     footer nav {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
-      margin: 0 200px; }
+      margin: 0 150px 0 50px; }
   .copyright {
     display: inline; } }
 
@@ -433,8 +468,21 @@
     color: #fafafa;
     transform: scale(0.9, 0.9);
     transition-duration: 0.9ms; }
+  /* ESTILOS BARRA DE NAVEGACIÓN */
   .logo__small--title {
     display: none; }
+  .nav-link, .dropdown-item {
+    color: white;
+    text-transform: uppercase; }
+  /* ESTILOS PRODUCTOS DESTACADOS */
+  .category__featured h2 {
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #001155, 0 0 2px #001155, 0 0 10px #001155, 0 0 6px #001155, 0 0 20px #001155, 0 0 20px #001155, 0 0 1px #001155, 0 0 12px #001155;
+    width: 75%;
+    height: auto;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 auto; }
   /* ESTILOS PRODUCTOS */
   .category__title--beer p {
     font-size: 2rem;
@@ -443,12 +491,15 @@
     width: 90%;
     text-align: center;
     letter-spacing: normal;
-    color: #f0f5f9; }
-  .category__title--beer h1 {
+    color: #f0f5f9;
+    filter: drop-shadow(-5px 5px 3px black); }
+  .category__title--beer h2 {
     color: #0021a1;
-    font-size: 5.2rem;
+    font-size: 4.5rem;
     font-weight: 900;
-    margin: 15px; }
+    margin: 15px;
+    filter: drop-shadow(-5px 5px 3px black);
+    text-transform: capitalize; }
   .category__title--accesories p {
     font-size: 2rem;
     font-weight: 600;
@@ -456,23 +507,25 @@
     width: 90%;
     text-align: center;
     letter-spacing: normal;
-    color: #f0f5f9; }
-  .category__title--accesories h1 {
+    color: #f0f5f9;
+    filter: drop-shadow(-5px 5px 3px black); }
+  .category__title--accesories h2 {
     color: #0021a1;
     font-size: 4.5rem;
     font-weight: 900;
     margin: 15px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    filter: drop-shadow(-5px 5px 3px black); }
   .category h2 {
-    color: #f2c15e;
-    background-color: #001155;
-    width: 95%;
+    color: white;
+    background-color: #0021a1;
+    width: 100%;
     height: auto;
     text-align: center;
-    margin: 0 auto;
-    padding: 10px 0 0 5px;
-    border-radius: 0 50px 0 50px;
-    font-size: 2.5rem; }
+    font-weight: 700;
+    text-shadow: 2px 2px 10px #f2c15e;
+    font-size: 1.6rem;
+    text-transform: uppercase; }
   .category__container--item h3 {
     text-transform: uppercase;
     color: #4242c9;
@@ -487,7 +540,7 @@
     font-weight: 400; }
   /* ESTILOS SERVICIOS DE COMPRA */
   .services__items h3 {
-    font-size: 2.3em;
+    font-size: 1em;
     color: #001155;
     text-transform: uppercase;
     text-align: center;
@@ -538,7 +591,8 @@
       .site-map ul li a {
         color: #0021a1;
         font-size: 1.2rem;
-        text-align: left; }
+        text-align: left;
+        text-transform: capitalize; }
   /* ESTILOS CONTACTO */
   .contacto h2 {
     color: #0021a1;
@@ -561,17 +615,38 @@
     transform: scale(0.9, 0.9);
     transition-duration: 0.9ms;
     color: #0021a1; }
+  /* ESTILOS BARRA DE NAVEGACIÓN */
   .logo__small--title {
-    display: none; }
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 1.8rem;
+    position: relative;
+    left: 50px;
+    top: -70px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-right: 500px;
+    filter: drop-shadow(-5px 5px 3px black); }
+  .nav-link, .dropdown-item {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase; }
   /* ESTILOS SLIDERS */
   .carousel-caption h2 {
     color: #fff;
     font-size: 1.4rem;
-    padding-top: 50px; }
+    padding-top: 50px;
+    filter: drop-shadow(-5px 5px 3px black);
+    text-transform: uppercase; }
+  /* ESTILOS PRODUCTOS DESTACADOS */
+  .category__featured h2 {
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #001155, 0 0 2px #001155, 0 0 10px #001155, 0 0 6px #001155, 0 0 20px #001155, 0 0 20px #001155, 0 0 1px #001155, 0 0 12px #001155;
+    width: 75%;
+    height: auto;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 auto; }
   /* ESTILOS PRODUCTOS */
-  .carousel-caption h5 {
-    color: white;
-    font-size: 1.8rem; }
   .category__title--beer p {
     font-size: 2rem;
     font-weight: 600;
@@ -579,12 +654,15 @@
     width: 90%;
     text-align: center;
     letter-spacing: normal;
-    color: #f0f5f9; }
-  .category__title--beer h1 {
+    color: #f0f5f9;
+    filter: drop-shadow(-5px 5px 3px black); }
+  .category__title--beer h2 {
     color: #0021a1;
     font-size: 5.2rem;
     font-weight: 900;
-    margin: 15px; }
+    margin: 15px;
+    filter: drop-shadow(-5px 5px 3px black);
+    text-transform: capitalize; }
   .category__title--accesories p {
     font-size: 2rem;
     font-weight: 600;
@@ -592,23 +670,26 @@
     width: 90%;
     text-align: center;
     letter-spacing: normal;
-    color: #f0f5f9; }
-  .category__title--accesories h1 {
+    color: #f0f5f9;
+    filter: drop-shadow(-5px 5px 3px black); }
+  .category__title--accesories h2 {
     color: #0021a1;
     font-size: 5.2rem;
     font-weight: 900;
     margin: 15px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    filter: drop-shadow(-5px 5px 3px black); }
   .category h2 {
-    color: #f2c15e;
-    background-color: #001155;
-    width: 95%;
+    color: white;
+    background-color: #0021a1;
+    width: 100%;
     height: auto;
     text-align: center;
-    margin: 0 auto;
-    padding: 10px 0 0 5px;
-    border-radius: 0 50px 0 50px;
-    font-size: 4rem; }
+    font-weight: 700;
+    text-shadow: 2px 2px 10px #f2c15e;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-transform: uppercase; }
   .category__container--item h3 {
     text-transform: uppercase;
     color: #4242c9;
@@ -628,7 +709,7 @@
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    margin-bottom: 10px; }
+    margin-bottom: 5px; }
   /* ESTILOS SUSCRIPCIÓN NEWSLETTER */
   .suscription h4 {
     color: #001155;
@@ -671,7 +752,8 @@
       list-style: none; }
       .site-map ul li a {
         color: #0021a1;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        text-transform: capitalize; }
   /* ESTILOS CONTACTO */
   .contacto h2 {
     color: #0021a1;
@@ -682,17 +764,24 @@
     font-size: 4rem;
     margin-bottom: 10px; } }
 
-@media screen and (min-width: 481px) and (max-width: 599px) {
-  /* ESTILOS SERVICIOS DE COMPRA */
-  .services__items h3 {
-    font-size: 1.1em;
-    color: #001155;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 10px; } }
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* ESTILOS BARRA DE NAVEGACION*/
+  .logo__small--title {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 1.6rem;
+    position: relative;
+    left: 50px;
+    top: -65px;
+    text-transform: uppercase;
+    filter: drop-shadow(-5px 5px 3px black);
+    width: 100px;
+    padding: 0; }
+  .nav-link, .dropdown-item {
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase; }
+  .nav-link {
+    font-size: 1rem; }
   /* ESTILOS PRODUCTOS */
   .category__container--item h3 {
     text-transform: uppercase;
@@ -715,18 +804,29 @@
     transform: scale(0.9, 0.9);
     transition-duration: 0.9ms;
     color: #0021a1; }
+  /* ESTILOS BARRA DE NAVEGACIÓN */
   .logo__small--title {
-    display: none; }
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 1.4rem;
+    position: relative;
+    left: 45px;
+    top: -35px;
+    text-transform: uppercase;
+    filter: drop-shadow(-5px 5px 3px black);
+    width: 100px;
+    padding: 0; }
+  .nav-link, .dropdown-item {
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase; }
   /* ESTILOS SLIDERS */
   .carousel-caption h2 {
     color: #fff;
     font-size: 1.8rem;
     padding-top: 50px;
-    text-transform: uppercase; }
-  /* ESTILOS PRODUCTOS */
-  .carousel-caption h5 {
-    color: white;
-    font-size: 1.8rem; }
+    text-transform: uppercase;
+    filter: drop-shadow(-5px 5px 3px black); }
+  /* ESTILOS PRODUCTOS DESTACADOS */
   /* ESTILOS PRODUCTOS */
   .category__title--beer p {
     font-size: 2rem;
@@ -734,29 +834,45 @@
     margin-top: 100px;
     width: 45%;
     letter-spacing: normal;
-    color: #f0f5f9; }
-  .category__title--beer h1 {
+    color: #f0f5f9;
+    filter: drop-shadow(-5px 5px 3px black); }
+  .category__title--beer h2 {
     color: #0021a1;
     font-size: 6.2rem;
     font-weight: 900;
-    margin-bottom: 50px; }
+    margin: 15px;
+    text-transform: capitalize;
+    filter: drop-shadow(-5px 5px 3px black); }
   .category__title--accesories p {
     font-size: 2rem;
     font-weight: 600;
     margin-top: 100px;
-    width: 90%;
+    width: 45%;
     text-align: center;
     letter-spacing: normal;
-    color: #f0f5f9; }
-  .category__title--accesories h1 {
+    color: #f0f5f9;
+    filter: drop-shadow(-5px 5px 3px black); }
+  .category__title--accesories h2 {
     color: #0021a1;
-    font-size: 5.2rem;
+    font-size: 6.2rem;
     font-weight: 900;
     margin: 15px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    filter: drop-shadow(-5px 5px 3px black); }
   .category h2 {
-    color: #f2c15e;
-    background-color: #001155;
+    color: white;
+    background-color: #0021a1;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px #f2c15e;
+    padding: 20px;
+    font-size: 4rem;
+    text-transform: uppercase; }
+  .category__featured h2 {
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #001155, 0 0 2px #001155, 0 0 10px #001155, 0 0 6px #001155, 0 0 20px #001155, 0 0 20px #001155, 0 0 1px #001155, 0 0 12px #001155;
     width: 75%;
     height: auto;
     text-align: center;
@@ -824,7 +940,8 @@
       list-style: none; }
       .site-map ul li a {
         color: #0021a1;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        text-transform: capitalize; }
   /*  ESTILOS PIE DE PAGINA */
   footer {
     text-align: center; }
@@ -843,33 +960,202 @@
 @media only screen and (max-width: 480px) {
   /* ESTILOS GENERALES */
   .logo__small {
-    width: 20%;
-    float: right;
-    margin-top: 10px; }
+    width: 20%; }
   .logo__large {
-    width: 95vw;
-    margin: auto; }
+    width: 75vw;
+    margin: 10px auto;
+    position: relative;
+    left: 12.5%; }
+  /* ESTILOS SERVICIOS DE COMPRA */
+  .services__items img {
+    width: 30vw; }
   /* ESTILOS PRODUCTOS */
   .category__container--item img {
     width: 75%;
     height: auto; }
+  /* ESTILOS CATEGORÍAS */
+  .category h2 img {
+    width: 15%; }
+  #lager .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -25px; }
+  #lager .category__img--left {
+    position: relative;
+    right: -25px; }
+  #ipa .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -46px; }
+  #ipa .category__img--left {
+    position: relative;
+    right: -46px; }
+  #pilsen .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -25px; }
+  #pilsen .category__img--left {
+    position: relative;
+    right: -25px; }
+  #rojas .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -25px; }
+  #rojas .category__img--left {
+    position: relative;
+    right: -25px; }
+  #negras .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -18px; }
+  #negras .category__img--left {
+    position: relative;
+    right: -18px; }
+  #miel .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -20px; }
+  #miel .category__img--left {
+    position: relative;
+    right: -20px; }
+  #trigo .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -8px; }
+  #trigo .category__img--left {
+    position: relative;
+    right: -8px; }
+  #destapadores .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -35px; }
+  #destapadores .category__img--left {
+    position: relative;
+    right: -35px; }
+  #conservadoras .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -25px; }
+  #conservadoras .category__img--left {
+    position: relative;
+    right: -25px; }
+  #choperas .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -63px; }
+  #choperas .category__img--left {
+    position: relative;
+    right: -63px; }
+  #vasos .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -88px; }
+  #vasos .category__img--left {
+    position: relative;
+    right: -88px; }
   /* ESTILOS PIE DE PÁGINA */
   .logo__redes img {
-    width: 70px; } }
+    width: 50px; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
   /* ESTILOS LOGOS */
   .logo__small {
-    width: 30%;
-    float: left;
-    margin-top: 10px; }
+    width: 10%;
+    height: 10%;
+    height: auto;
+    position: relative;
+    top: -10px;
+    left: 10px;
+    filter: drop-shadow(-5px 5px 8px black); }
   .logo__large {
-    width: 95vw;
-    margin: auto; }
+    width: 50vw;
+    margin: 10px auto;
+    position: relative;
+    left: 25%; }
   /* ESTILOS PRODUCTOS */
   .category__container--item img {
     width: 75%;
     height: auto; }
+  /* ESTILOS CATEGORÍAS */
+  .category h2 img {
+    width: 20%; }
+  #lager .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -80px; }
+  #lager .category__img--left {
+    position: relative;
+    right: -80px; }
+  #ipa .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -115px; }
+  #ipa .category__img--left {
+    position: relative;
+    right: -115px; }
+  #pilsen .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -77px; }
+  #pilsen .category__img--left {
+    position: relative;
+    right: -77px; }
+  #rojas .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -80px; }
+  #rojas .category__img--left {
+    position: relative;
+    right: -80px; }
+  #negras .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -70px; }
+  #negras .category__img--left {
+    position: relative;
+    right: -70px; }
+  #miel .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -70px; }
+  #miel .category__img--left {
+    position: relative;
+    right: -70px; }
+  #trigo .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -55px; }
+  #trigo .category__img--left {
+    position: relative;
+    right: -55px; }
+  #destapadores .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -95px; }
+  #destapadores .category__img--left {
+    position: relative;
+    right: -95px; }
+  #conservadoras .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -80px; }
+  #conservadoras .category__img--left {
+    position: relative;
+    right: -80px; }
+  #choperas .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -63px; }
+  #choperas .category__img--left {
+    position: relative;
+    right: -63px; }
+  #vasos .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -180px; }
+  #vasos .category__img--left {
+    position: relative;
+    right: -180px; }
   /* ESTILOS SERVICIOS DE COMPRA */
   .services__items img {
     width: 20vw; }
@@ -881,29 +1167,196 @@
   /* ESTILOS PRODUCTOS */
   .category__container--item img {
     width: 100%;
-    height: auto; } }
+    height: auto; }
+  /* ESTILOS CATEGORÍAS */
+  .category h2 img {
+    width: 20%; }
+  #lager .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -120px; }
+  #lager .category__img--left {
+    position: relative;
+    right: -120px; }
+  #ipa .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -167px; }
+  #ipa .category__img--left {
+    position: relative;
+    right: -167px; }
+  #pilsen .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -111px; }
+  #pilsen .category__img--left {
+    position: relative;
+    right: -111px; }
+  #rojas .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -120px; }
+  #rojas .category__img--left {
+    position: relative;
+    right: -120px; }
+  #negras .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -98px; }
+  #negras .category__img--left {
+    position: relative;
+    right: -98px; }
+  #miel .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -100px; }
+  #miel .category__img--left {
+    position: relative;
+    right: -100px; }
+  #trigo .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -78px; }
+  #trigo .category__img--left {
+    position: relative;
+    right: -78px; }
+  .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -65px; }
+  .category__img--left {
+    position: relative;
+    right: -65px; }
+  #destapadores .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -165px; }
+  #destapadores .category__img--left {
+    position: relative;
+    right: -165px; }
+  #conservadoras .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -145px; }
+  #conservadoras .category__img--left {
+    position: relative;
+    right: -145px; }
+  #choperas .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -210px; }
+  #choperas .category__img--left {
+    position: relative;
+    right: -210px; }
+  #vasos .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -250px; }
+  #vasos .category__img--left {
+    position: relative;
+    right: -250px; } }
 
 @media only screen and (min-width: 1025px) {
   /* ESTILOS LOGOS */
   .logo__small {
     width: 10%;
-    float: left;
-    margin-top: 10px; }
+    margin-left: 10px;
+    filter: drop-shadow(-5px 5px 8px black); }
   .logo__large {
-    width: 30vw;
-    margin-right: 0 auto; }
+    width: 30vw; }
   .category__container--item img {
     width: 65%;
     height: auto; }
+  /* ESTILOS CATEGORÍAS */
+  .category h2 img {
+    width: 20%; }
+  #lager .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -120px; }
+  #lager .category__img--left {
+    position: relative;
+    right: -120px; }
+  #ipa .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -167px; }
+  #ipa .category__img--left {
+    position: relative;
+    right: -167px; }
+  #pilsen .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -111px; }
+  #pilsen .category__img--left {
+    position: relative;
+    right: -111px; }
+  #rojas .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -120px; }
+  #rojas .category__img--left {
+    position: relative;
+    right: -120px; }
+  #negras .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -98px; }
+  #negras .category__img--left {
+    position: relative;
+    right: -98px; }
+  #miel .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -100px; }
+  #miel .category__img--left {
+    position: relative;
+    right: -100px; }
+  #trigo .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -78px; }
+  #trigo .category__img--left {
+    position: relative;
+    right: -78px; }
+  #destapadores .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -140px; }
+  #destapadores .category__img--left {
+    position: relative;
+    right: -140px; }
+  #conservadoras .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -115px; }
+  #conservadoras .category__img--left {
+    position: relative;
+    right: -115px; }
+  #choperas .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -210px; }
+  #choperas .category__img--left {
+    position: relative;
+    right: -210px; }
+  #vasos .category__img--right {
+    transform: scaleX(-1);
+    position: relative;
+    left: -272px; }
+  #vasos .category__img--left {
+    position: relative;
+    right: -272px; }
   /* ESTILOS SERVICIOS DE COMPRA */
   .services__items img {
     width: 10vw; }
   /*  ESTILOS PIE DE PAGINA */
   .logo__redes img {
     width: 50px;
-    filter: grayscale(1); }
+    filter: grayscale(1);
+    margin: 0.8rem; }
   .logo__redes img:hover {
-    filter: opacity(0.8); } }
+    filter: opacity(1); } }
 
 @media only screen and (max-width: 480px) {
   /* ESTILOS PRODUCTOS */

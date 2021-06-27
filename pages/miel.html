@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="cerveza, birra, pedí tu cerveza, cerveza barata">
-    <meta name="description" content="Cervezame es una tienda online que tiene la mayor variedad de cervezas para disfrutar solo o con amigos. Acá podrás ver todo el detalle del sitio.">
-    
+    <meta name="keywords" content="cerveza en lata, cerveza de miel, birra de miel, cerveza honey, honey beer">
+    <meta name="description" content="La miel le aporta a la cerveza azúcares que ayudan a la fermentación para tener un mayor volumen de alcohol y un sabor más dulce.">
     <!-- Fuentes del HTML -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
-
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     
@@ -21,12 +20,13 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="../styles/estilos.css">
     
-    <title>Mapa del sitio, Cervezame</title>
+    
+    <title>Cervezas de miel</title>
     <link rel="shortcut icon" type="image/icon" href="../img/logo-cervezame-solo.png">
 </head>
-
 <body>
-    <!-- Inicio de barra de navegación -->
+
+<!-- Inicio de barra de navegación -->
 
 <nav class="navbar navbar-expand-lg navbar-dark btn-primary sticky-top nav--bar">
     <div class="container-fluid">
@@ -79,29 +79,57 @@
 </nav>
 
 <!-- Fin de barra de navegacion -->
-    <main class="site-map">
-        
-        <h2>mapa del sitio</h2>
-        <ul>
-            <li><a href="../index.html">página principal</a></li>
-            <li><a href="cervezas.html">cervezas</a></li>            
-            <li><a href="lager.html">lager</a></li>
-            <li><a href="pilsen.html">pilsen</a></li>
-            <li><a href="rojas.html">rojas</a></li>
-            <li><a href="negras.html">negras</a></li>            
-            <li><a href="ipa.html">ipa</a></li>                    
-            <li><a href="miel.html">miel</a></li>
-            <li><a href="trigo.html">trigo</a></li>
-            <li><a href="accesorios.html">accesorios</a></li>
-            <li><a href="destapadores.html">destapadores</a></li>
-            <li><a href="conservadoras.html">conservadoras</a></li>
-            <li><a href="choperas.html">chopperas</a></li>
-            <li><a href="vasos.html">vasos</a></li>  
-            <li><a href="contacto.html">contacto</a></li>
-        </ul>
-        
-    </main> 
-    <!-- Fin mapa del sitio -->
+
+<!-- Inicio de sección de productos -->
+<main>
+
+    <!-- Inicio de sección de cervezas de miel -->
+    <div class="category">
+        <h2 id="miel"><img class="category__img--right" src="../img/chopp-brindis.png" alt="Mano con chopp de cerveza">CERVEZAS DE MIEL<img class="category__img--left" src="../img/chopp-brindis.png" alt="Mano con chopp de cerveza"></h2> 
+        <div class="category__container">
+            <div class="category__container--item">
+                <img src="../img/cervezas/cervezas-nacional-antares-miel.jpg" alt="Lata de cerveza Antares Miel">
+                <h3 class="marca">antares miel</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$90</h5>
+                
+                <form class="cantidad">                            
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>                                    
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+
+            <div class="category__container--item">
+                <img src="../img/cervezas/cervezas-nacional-patagonia-miel.png" alt="Lata de cerveza Patagonia Miel">
+                <h3 class="marca">patagonia miel</h3>
+                <h4 class="medida">lata 473ml</h4>
+                <h5 class="precio">$90</h5>
+                
+                <form class="cantidad">                            
+                    <select  class="form-select" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>                                    
+                </form>
+                <span class="category__button">agregar al carrito</span>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de sección de cervezas de miel -->
+
+</main>
+<!-- Fin de sección de productos -->
 
 <section>
     <div class="logo__container">
@@ -109,46 +137,44 @@
     </div>
 </section>
 
-    <!-- Inicio de pie de página -->
+<!-- Inicio de pie de página -->
+<footer>
+    <div class="logo__redes">
+    <a href="http://www.facebook.com/jump73" target="_blank"><img src="../img/facebook.png" alt="Logo de Facebook"></a>
+    <a href="http://www.twitter.com" target="_blank"><img src="../img/twitter.png" alt="Logo de Twitter"></a>
+    <a href="http://www.instagram.com" target="_blank"><img src="../img/instagram.png" alt="Logo de instagram"></a>
+    <a href="https://wa.me/+541140993739" target="_blank"><img src="../img/whatsapp.png" alt="Logo de Whatsapp"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">inicio</a></li>
+            <li><a href="cervezas.html">cervezas</a></li>
+            <li><a href="accesorios.html">accesorios</a></li>
+            <li><a href="contacto.html">contacto</a></li>
+            <li><a href="mapa-del-sitio.html">mapa del sitio</a></li>
+        </ul> 
+        <ul>
+            <li>Contacto</li>
+            <li><a href="tel:1140993739">11-4099-3739</a></li>
+            <li><a href="https://wa.me/+541140993739" target="_blank">whatsapp</a></li>
+            <li><a href="mailto:jpmirabile@gmail.com">jpmirabile@gmail.com</a></li>
+        </ul>
+
+        <ul>
+            <li>más información</li>
+            <li>términos y condiciones</li>
+            <li>privacidad</li>
+            <a href="http://www.buenosaires.gob.ar/defensaconsumidor"><li>defensa al consumidor</li></a>
+        </ul>
+    </nav>
+
+    <div class="copyright">
+        <Span>Todos los derechos reservados 2021 </span> <span><a href="http://www.facebook.com/jump73" target="_blank">Juan Pablo Mirabile</a></Span>
+    </div>
     
-    <footer>
-        <div class="logo__redes">
-            <a href="http://www.facebook.com/jump73" target="_blank"><img src="../img/facebook.png" alt="Logo de Facebook"></a>
-            <a href="http://www.twitter.com" target="_blank"><img src="../img/twitter.png" alt="Logo de Twitter"></a>
-            <a href="http://www.instagram.com" target="_blank"><img src="../img/instagram.png" alt="Logo de instagram"></a>
-            <a href="https://wa.me/+541140993739" target="_blank"><img src="../img/whatsapp.png" alt="Logo de Whatsapp"></a>
-        </div>
+</footer>
+<!-- Fin de pie de página -->
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="cervezas.html">cervezas</a></li>
-                <li><a href="accesorios.html">accesorios</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-                <li><a href="mapa-del-sitio.html">mapa del sitio</a></li>
-            </ul>
-              
-            <ul>
-                <li>Contacto</li>
-                <li><a href="tel:1140993739">11-4099-3739</a></li>
-                <li><a href="https://wa.me/+541140993739" target="_blank">whatsapp</a></li>
-                <li><a href="mailto:jpmirabile@gmail.com">jpmirabile@gmail.com</a></li>
-            </ul>
-
-            <ul>
-                <li>más información</li>
-                <li>términos y condiciones</li>
-                <li>privacidad</li>
-                <a href="http://www.buenosaires.gob.ar/defensaconsumidor"><li>defensa al consumidor</li></a>
-            </ul>
-        </nav>
-
-        <div class="copyright">
-            <Span>Todos los derechos reservados 2021 </span> <span><a href="http://www.facebook.com/jump73" target="_blank">Juan Pablo Mirabile</a></Span>
-        </div>
-        
-    </footer>
-    <!-- Fin de pie de página -->
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    
