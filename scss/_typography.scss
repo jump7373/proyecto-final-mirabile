@@ -137,6 +137,11 @@
             text-align: center;
             font-weight: $font-weight*4;
         }
+
+        h5 {
+            font-size: 1.2rem;
+
+        }
         
     }
 
@@ -246,7 +251,7 @@
 }
 
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 991px) {
 
     /* ESTILOS GENERALES */
     body, .body--background {
@@ -269,13 +274,12 @@
     /* ESTILOS BARRA DE NAVEGACIÓN */
     .logo__small--title {
         font-family: 'Grenze Gotisch', cursive;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         position: relative;
-        left: 50px;
-        top: -70px;
+        left: 2.5rem;
+        top: -2.5rem;
         text-transform: uppercase;
-        margin-top: 1rem;
-        margin-right: 500px;
+        
         filter: $letter-filter;
     }
 
@@ -399,6 +403,11 @@
             text-align: center;
             font-weight: $font-weight*4;
         }
+
+        h5 {
+            font-size: 1.2rem;
+
+        }
         
     }
 
@@ -508,18 +517,18 @@ footer {
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
 
     /* ESTILOS BARRA DE NAVEGACION*/
     .logo__small--title {
         font-family: 'Grenze Gotisch', cursive;
         font-size: 1.6rem;
         position: relative;
-        left: 50px;
-        top: -65px;
+        left: 2.5rem;
+        top: -2.8rem;
         text-transform: uppercase;
         filter: $letter-filter;
-        width: 100px;
+        width: 6.25rem;
         padding: 0;
     }
 
@@ -549,7 +558,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 992px) {
     
     /* ESTILOS GENERALES */
     body, .body--background {
@@ -575,8 +584,8 @@ footer {
         font-family: 'Grenze Gotisch', cursive;
         font-size: 1.4rem;
         position: relative;
-        left: 45px;
-        top: -35px;
+        left: 50px;
+        top: -20px;
         text-transform: uppercase;
         filter: $letter-filter;
         width: 100px;

@@ -199,7 +199,7 @@
 
 }
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 991px) {
 
     /* ESTILOS GENERALES */
     body, .body--background {
@@ -214,14 +214,19 @@
     }    
 
     .burger__button {
+        width: 100%;
         display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+        justify-content: space-between;
+
     }
 
     header {
         margin: 10px;
-        height: 40px;
-        width: auto;
-        padding: auto;
+        height: 2.5rem;
+        width: 50vw;
+        
         a:hover {
             color: white;
         }
@@ -407,6 +412,35 @@
 
 @media screen and (min-width: 481px) and (max-width: 599px) {
 
+    /* ESTILOS BARRA DE NAVEGACIÓN */
+    .nav--bar {
+        margin-bottom: 10px;
+        background: rgb(13,110,253);
+        background: linear-gradient(180deg, rgba(13,110,253,1) 0%, rgba(13,110,253,0.7959558823529411) 49%, rgba(13,110,253,0.5886729691876751) 100%);
+    }    
+
+    .burger__button {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+        justify-content: space-between;
+
+    }
+
+    /*ESTILOS DE PRODUCTOS*/
+    
+    .category__container--item {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        background-color: #fff;
+        margin: 0.312rem 0.625rem;
+
+    }
+
     /* ESTILOS PIE DE PAGINA */
     
     footer {
@@ -418,16 +452,19 @@
             margin: 0 auto;
         }
     }
+    
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
 
     /* ESTILOS PRODUCTOS */
 
     .category__container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: flex-start;
+        margin: $margin/10 auto;
     }
 
     .category__container--item {
@@ -435,8 +472,9 @@
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
-        width: 24%;
+        width: 20%;
         background-color: #fff;
+        margin: 0.312rem 0.625rem;
 
     }
 
@@ -452,7 +490,7 @@
 
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 992px) {
 
     /* ESTILOS GENERALES */
     body{
@@ -483,7 +521,7 @@
     header {
         margin: 10px;
         height: 50px;
-        width: auto;
+        width: 35vw;
         padding: auto;
         a:hover {
             color: white;
@@ -547,7 +585,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 100%;
-        margin-left: 0.5rem;
+        margin: 0 auto;
     }
 
     .category__container--item {
@@ -556,7 +594,7 @@
         flex-direction: column;
         align-items: center;
         width: 15%;
-        margin: $margin/20 $margin/12;
+        margin: $margin/20 10px $margin/20 5px;
         padding: 10px 0;
         background-color: #fff;
     }
@@ -649,7 +687,7 @@
 
     /* ESTILOS CONTACTO */
     .contacto {
-        width: 50%;
+        width: 75%;
         margin: $margin/5 auto;
         border: 1px #4c555a8c solid;
         padding: 20px;

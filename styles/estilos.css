@@ -132,7 +132,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr; } }
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 991px) {
   /* ESTILOS GENERALES */
   body, .body--background {
     background-color: #eaeaea; }
@@ -142,12 +142,15 @@
     background: #0d6efd;
     background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
   .burger__button {
-    display: flex; }
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    justify-content: space-between; }
   header {
     margin: 10px;
-    height: 40px;
-    width: auto;
-    padding: auto; }
+    height: 2.5rem;
+    width: 50vw; }
     header a:hover {
       color: white; }
   .dropdown-menu {
@@ -277,6 +280,26 @@
     display: inline; } }
 
 @media screen and (min-width: 481px) and (max-width: 599px) {
+  /* ESTILOS BARRA DE NAVEGACIÓN */
+  .nav--bar {
+    margin-bottom: 10px;
+    background: #0d6efd;
+    background: linear-gradient(180deg, #0d6efd 0%, rgba(13, 110, 253, 0.795956) 49%, rgba(13, 110, 253, 0.588673) 100%); }
+  .burger__button {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    justify-content: space-between; }
+  /*ESTILOS DE PRODUCTOS*/
+  .category__container--item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    background-color: #fff;
+    margin: 0.312rem 0.625rem; }
   /* ESTILOS PIE DE PAGINA */
   footer nav {
     display: grid;
@@ -284,18 +307,21 @@
     justify-items: center;
     margin: 0 auto; } }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   /* ESTILOS PRODUCTOS */
   .category__container {
     display: flex;
-    justify-content: flex-start; }
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px auto; }
   .category__container--item {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    width: 24%;
-    background-color: #fff; }
+    width: 20%;
+    background-color: #fff;
+    margin: 0.312rem 0.625rem; }
   /* ESTILOS CONTACTO */
   .contacto {
     width: 90%;
@@ -303,7 +329,7 @@
     border: 1px #4c555a8c solid;
     padding: 20px; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 992px) {
   /* ESTILOS GENERALES */
   body {
     max-width: 90vw;
@@ -323,7 +349,7 @@
   header {
     margin: 10px;
     height: 50px;
-    width: auto;
+    width: 35vw;
     padding: auto; }
     header a:hover {
       color: white; }
@@ -368,14 +394,14 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 100%;
-    margin-left: 0.5rem; }
+    margin: 0 auto; }
   .category__container--item {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     width: 15%;
-    margin: 5px 8.33333px;
+    margin: 5px 10px 5px 5px;
     padding: 10px 0;
     background-color: #fff; }
   .category__container--item:hover {
@@ -439,7 +465,7 @@
     color: #fff; }
   /* ESTILOS CONTACTO */
   .contacto {
-    width: 50%;
+    width: 75%;
     margin: 20px auto;
     border: 1px #4c555a8c solid;
     padding: 20px; }
@@ -538,6 +564,8 @@
     text-transform: capitalize;
     text-align: center;
     font-weight: 400; }
+  .category__container--item h5 {
+    font-size: 1.2rem; }
   /* ESTILOS SERVICIOS DE COMPRA */
   .services__items h3 {
     font-size: 1em;
@@ -603,7 +631,7 @@
     font-size: 4rem;
     margin-bottom: 10px; } }
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 991px) {
   /* ESTILOS GENERALES */
   body, .body--background {
     font-family: 'Source Sans Pro', sans-serif; }
@@ -618,13 +646,11 @@
   /* ESTILOS BARRA DE NAVEGACIÓN */
   .logo__small--title {
     font-family: 'Grenze Gotisch', cursive;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     position: relative;
-    left: 50px;
-    top: -70px;
+    left: 2.5rem;
+    top: -2.5rem;
     text-transform: uppercase;
-    margin-top: 1rem;
-    margin-right: 500px;
     filter: drop-shadow(-5px 5px 3px black); }
   .nav-link, .dropdown-item {
     color: white;
@@ -702,6 +728,8 @@
     text-transform: capitalize;
     text-align: center;
     font-weight: 400; }
+  .category__container--item h5 {
+    font-size: 1.2rem; }
   /* ESTILOS SERVICIOS DE COMPRA */
   .services__items h3 {
     font-size: 1.6em;
@@ -764,17 +792,17 @@
     font-size: 4rem;
     margin-bottom: 10px; } }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   /* ESTILOS BARRA DE NAVEGACION*/
   .logo__small--title {
     font-family: 'Grenze Gotisch', cursive;
     font-size: 1.6rem;
     position: relative;
-    left: 50px;
-    top: -65px;
+    left: 2.5rem;
+    top: -2.8rem;
     text-transform: uppercase;
     filter: drop-shadow(-5px 5px 3px black);
-    width: 100px;
+    width: 6.25rem;
     padding: 0; }
   .nav-link, .dropdown-item {
     color: white;
@@ -792,7 +820,7 @@
     margin: auto 0;
     text-align: center; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 992px) {
   /* ESTILOS GENERALES */
   body, .body--background {
     font-family: 'Source Sans Pro', sans-serif; }
@@ -809,8 +837,8 @@
     font-family: 'Grenze Gotisch', cursive;
     font-size: 1.4rem;
     position: relative;
-    left: 45px;
-    top: -35px;
+    left: 50px;
+    top: -20px;
     text-transform: uppercase;
     filter: drop-shadow(-5px 5px 3px black);
     width: 100px;
@@ -976,96 +1004,19 @@
   /* ESTILOS CATEGORÍAS */
   .category h2 img {
     width: 15%; }
-  #lager .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -25px; }
-  #lager .category__img--left {
-    position: relative;
-    right: -25px; }
-  #ipa .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -46px; }
-  #ipa .category__img--left {
-    position: relative;
-    right: -46px; }
-  #pilsen .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -25px; }
-  #pilsen .category__img--left {
-    position: relative;
-    right: -25px; }
-  #rojas .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -25px; }
-  #rojas .category__img--left {
-    position: relative;
-    right: -25px; }
-  #negras .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -18px; }
-  #negras .category__img--left {
-    position: relative;
-    right: -18px; }
-  #miel .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -20px; }
-  #miel .category__img--left {
-    position: relative;
-    right: -20px; }
-  #trigo .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -8px; }
-  #trigo .category__img--left {
-    position: relative;
-    right: -8px; }
-  #destapadores .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -35px; }
-  #destapadores .category__img--left {
-    position: relative;
-    right: -35px; }
-  #conservadoras .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -25px; }
-  #conservadoras .category__img--left {
-    position: relative;
-    right: -25px; }
-  #choperas .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -63px; }
-  #choperas .category__img--left {
-    position: relative;
-    right: -63px; }
-  #vasos .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -88px; }
-  #vasos .category__img--left {
-    position: relative;
-    right: -88px; }
   /* ESTILOS PIE DE PÁGINA */
   .logo__redes img {
     width: 50px; } }
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 991px) {
   /* ESTILOS LOGOS */
   .logo__small {
-    width: 10%;
-    height: 10%;
+    width: 3rem;
+    height: auto;
     height: auto;
     position: relative;
-    top: -10px;
-    left: 10px;
+    top: -0.625rem;
+    left: 0.625rem;
     filter: drop-shadow(-5px 5px 8px black); }
   .logo__large {
     width: 50vw;
@@ -1079,83 +1030,6 @@
   /* ESTILOS CATEGORÍAS */
   .category h2 img {
     width: 20%; }
-  #lager .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -80px; }
-  #lager .category__img--left {
-    position: relative;
-    right: -80px; }
-  #ipa .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -115px; }
-  #ipa .category__img--left {
-    position: relative;
-    right: -115px; }
-  #pilsen .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -77px; }
-  #pilsen .category__img--left {
-    position: relative;
-    right: -77px; }
-  #rojas .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -80px; }
-  #rojas .category__img--left {
-    position: relative;
-    right: -80px; }
-  #negras .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -70px; }
-  #negras .category__img--left {
-    position: relative;
-    right: -70px; }
-  #miel .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -70px; }
-  #miel .category__img--left {
-    position: relative;
-    right: -70px; }
-  #trigo .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -55px; }
-  #trigo .category__img--left {
-    position: relative;
-    right: -55px; }
-  #destapadores .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -95px; }
-  #destapadores .category__img--left {
-    position: relative;
-    right: -95px; }
-  #conservadoras .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -80px; }
-  #conservadoras .category__img--left {
-    position: relative;
-    right: -80px; }
-  #choperas .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -63px; }
-  #choperas .category__img--left {
-    position: relative;
-    right: -63px; }
-  #vasos .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -180px; }
-  #vasos .category__img--left {
-    position: relative;
-    right: -180px; }
   /* ESTILOS SERVICIOS DE COMPRA */
   .services__items img {
     width: 20vw; }
@@ -1163,190 +1037,27 @@
   .logo__redes img {
     width: 70px; } }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   /* ESTILOS PRODUCTOS */
   .category__container--item img {
     width: 100%;
-    height: auto; }
-  /* ESTILOS CATEGORÍAS */
-  .category h2 img {
-    width: 20%; }
-  #lager .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -120px; }
-  #lager .category__img--left {
-    position: relative;
-    right: -120px; }
-  #ipa .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -167px; }
-  #ipa .category__img--left {
-    position: relative;
-    right: -167px; }
-  #pilsen .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -111px; }
-  #pilsen .category__img--left {
-    position: relative;
-    right: -111px; }
-  #rojas .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -120px; }
-  #rojas .category__img--left {
-    position: relative;
-    right: -120px; }
-  #negras .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -98px; }
-  #negras .category__img--left {
-    position: relative;
-    right: -98px; }
-  #miel .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -100px; }
-  #miel .category__img--left {
-    position: relative;
-    right: -100px; }
-  #trigo .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -78px; }
-  #trigo .category__img--left {
-    position: relative;
-    right: -78px; }
-  .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -65px; }
-  .category__img--left {
-    position: relative;
-    right: -65px; }
-  #destapadores .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -165px; }
-  #destapadores .category__img--left {
-    position: relative;
-    right: -165px; }
-  #conservadoras .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -145px; }
-  #conservadoras .category__img--left {
-    position: relative;
-    right: -145px; }
-  #choperas .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -210px; }
-  #choperas .category__img--left {
-    position: relative;
-    right: -210px; }
-  #vasos .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -250px; }
-  #vasos .category__img--left {
-    position: relative;
-    right: -250px; } }
+    height: auto; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 992px) {
   /* ESTILOS LOGOS */
   .logo__small {
-    width: 10%;
-    margin-left: 10px;
-    filter: drop-shadow(-5px 5px 8px black); }
+    width: 3rem;
+    height: 10%;
+    height: auto;
+    position: relative;
+    top: 0.625rem;
+    left: 1.25rem;
+    filter: drop-shadow(-5px 5px 3px black); }
   .logo__large {
     width: 30vw; }
   .category__container--item img {
     width: 65%;
     height: auto; }
-  /* ESTILOS CATEGORÍAS */
-  .category h2 img {
-    width: 20%; }
-  #lager .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -120px; }
-  #lager .category__img--left {
-    position: relative;
-    right: -120px; }
-  #ipa .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -167px; }
-  #ipa .category__img--left {
-    position: relative;
-    right: -167px; }
-  #pilsen .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -111px; }
-  #pilsen .category__img--left {
-    position: relative;
-    right: -111px; }
-  #rojas .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -120px; }
-  #rojas .category__img--left {
-    position: relative;
-    right: -120px; }
-  #negras .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -98px; }
-  #negras .category__img--left {
-    position: relative;
-    right: -98px; }
-  #miel .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -100px; }
-  #miel .category__img--left {
-    position: relative;
-    right: -100px; }
-  #trigo .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -78px; }
-  #trigo .category__img--left {
-    position: relative;
-    right: -78px; }
-  #destapadores .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -140px; }
-  #destapadores .category__img--left {
-    position: relative;
-    right: -140px; }
-  #conservadoras .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -115px; }
-  #conservadoras .category__img--left {
-    position: relative;
-    right: -115px; }
-  #choperas .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -210px; }
-  #choperas .category__img--left {
-    position: relative;
-    right: -210px; }
-  #vasos .category__img--right {
-    transform: scaleX(-1);
-    position: relative;
-    left: -272px; }
-  #vasos .category__img--left {
-    position: relative;
-    right: -272px; }
   /* ESTILOS SERVICIOS DE COMPRA */
   .services__items img {
     width: 10vw; }
@@ -1374,7 +1085,7 @@
     margin: 10px auto;
     width: 50%; } }
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 991px) {
   /*ESTILOS PRODUCTOS */
   .category__button {
     background-color: #0d6efd;
@@ -1392,18 +1103,19 @@
     margin: 10px auto;
     width: 30%; } }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   /* ESTILOS CONTACTOS */
   .form--submit {
     margin: 10px auto;
     width: 20%; } }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 992px) {
   /* ESTILOS PRODUCTOS */
   .category__button {
     background-color: #0d6efd;
     color: #fafafa;
     padding: 5px;
+    margin: 0 5px;
     border-radius: 50px;
     text-transform: uppercase;
     text-align: center;
