@@ -1,0 +1,6 @@
+Sitemap: https://jump7373.github.io/proyecto-final-mirabile/sitemap.xml
+
+User-agent: *
+Allow: /proyecto-final-mirabile/
+Allow: /proyecto-final-mirabile/pages/
+Disallow: /proyecto-final-mirabile/pages/mapa-del-sitio.html
